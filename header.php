@@ -1,40 +1,60 @@
 <?php 
 echo '
-<div class="header-body border-top-0">
-					<div class="header-container header-container-height-lg container">
+<div class="header-body border-color-primary border-bottom-0">
+					<div class="header-top-fixed header-top-simple-border-bottom">
+						<div class="container">
+							<div class="header-row py-2">
+								<div class="header-column justify-content-start">
+									<div class="header-row">
+									
+										<nav class="header-nav-top">
+											<ul class="nav nav-pills">
+												<li class="nav-item">
+													<a href="mailto:mail@domain.com"><i class="far fa-envelope text-4 text-color-primary" style="top: 1px;"></i> personaliz_Ed@gmail.com</a>
+												</li>
+												<li class="nav-item">
+													<a href="tel:123-456-7890"><i class="fa-solid fa-phone text-4 text-color-primary" style="top: 0;"></i> 123-456-7890</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="header-column justify-content-end">
+									<div class="header-row">
+									<nav class="header-nav-top">
+									<ul class="nav nav-pills text-uppercase text-2">
+										<li class="nav-item nav-item-anim-icon d-none d-md-block">
+											<a class="nav-link ps-0" href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a>
+										</li>
+										<li class="nav-item nav-item-anim-icon d-none d-md-block">
+											<a class="nav-link" href="contact-us.html"><i class="fas fa-angle-right"></i> Contact Us</a>
+										</li>
+									</ul>
+								</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-container container">
 						<div class="header-row">
-							<div class="header-column justify-content-start d-lg-none">
-								<div class="header-row mt-2">
+							<div class="header-column">
+								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" data-sticky-top="0" src="img/logo-corporate-17.png">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-default-slim.png">
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="header-column justify-content-center align-items-end">
-								<div class="header-nav justify-content-lg-center p-0">
-									<div class="header-nav header-nav-links">
-										<div class="header-nav-features header-nav-features-start pe-3 me-0">
-											<div class="header-nav-feature header-nav-features-search d-inline-flex">
-												<a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch" aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
-												<div class="header-nav-features-dropdown header-nav-features-dropdown-reverse header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
-													<form role="search" action="page-search-results.html" method="get">
-														<div class="simple-search input-group">
-															<input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-															<button class="btn" type="submit" aria-label="Search">
-																<i class="fas fa-search header-nav-top-icon"></i>
-															</button>
-														</div>
-													</form>
-												</div>
-											</div>
-										</div>
-										<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-dropdown-arrow header-nav-main-dropdown-center header-nav-main-dropdown-center-bottom header-nav-main-effect-3 header-nav-main-sub-effect-1">
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-line header-nav-bottom-line">
+										<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
-												<ul class="nav nav-pills flex-column flex-lg-row" id="mainNav">
-													<li class="dropdown d-lg-none order-1">
-														<a class="dropdown-item dropdown-toggle" href="index.html">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle active" href="index.html">
 															Home
 														</a>
 														<ul class="dropdown-menu">
@@ -102,7 +122,7 @@ echo '
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown dropdown-mega order-2">
+													<li class="dropdown dropdown-mega">
 														<a class="dropdown-item dropdown-toggle" href="elements.html">
 															Elements
 														</a>
@@ -183,8 +203,8 @@ echo '
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown order-3">
-														<a class="dropdown-item dropdown-toggle active" href="#">
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="#">
 															Features
 														</a>
 														<ul class="dropdown-menu">
@@ -679,7 +699,7 @@ echo '
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown order-4">
+													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
 															Pages
 														</a>
@@ -743,7 +763,7 @@ echo '
 															<li><a class="dropdown-item" href="page-user-profile.html">User Profile</a></li>
 														</ul>
 													</li>
-													<li class="dropdown order-6">
+													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
 															Portfolio
 														</a>
@@ -823,7 +843,7 @@ echo '
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown order-7">
+													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
 															Blog
 														</a>
@@ -904,7 +924,7 @@ echo '
 															</li>
 														</ul>
 													</li>
-													<li class="dropdown order-8 border-bottom-0">
+													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
 															Shop
 														</a>
@@ -951,59 +971,22 @@ echo '
 															<li><a class="dropdown-item" href="shop-order-complete.html">Order Complete</a></li>
 														</ul>
 													</li>
-													<li class="align-items-center d-none d-lg-flex order-5 px-5 mx-2">
-														<span class="header-logo">
-															<a href="index.html" class="w-100 text-center">
-																<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" data-sticky-top="72" src="img/logo-corporate-17.png">
-															</a>
-														</span>
-													</li>
 												</ul>
 											</nav>
 										</div>
-										<div class="header-nav-features ps-2 ms-0 me-3">
-											<div class="header-nav-feature header-nav-features-cart d-inline-flex ms-2">
-												<a href="#" class="header-nav-features-toggle" aria-label="">
-													<img src="img/icons/icon-cart.svg" width="14" alt="" class="header-nav-top-icon-img">
-													<span class="cart-info d-none">
-														<span class="cart-qty">1</span>
-													</span>
-												</a>
-												<div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopCartDropdown">
-													<ol class="mini-products-list">
-														<li class="item">
-															<a href="#" title="Camera X1000" class="product-image"><img src="img/products/product-1.jpg" alt="Camera X1000"></a>
-															<div class="product-details">
-																<p class="product-name">
-																	<a href="#">Camera X1000 </a>
-																</p>
-																<p class="qty-price">
-																1X <span class="price">$890</span>
-																</p>
-																<a href="#" title="Remove This Item" class="btn-remove"><i class="fas fa-times"></i></a>
-															</div>
-														</li>
-													</ol>
-													<div class="totals">
-														<span class="label">Total:</span>
-														<span class="price-total"><span class="price">$890</span></span>
-													</div>
-													<div class="actions">
-														<a class="btn btn-dark" href="#">View Cart</a>
-														<a class="btn btn-primary" href="#">Checkout</a>
-													</div>
-												</div>
-											</div>
-										</div>
+										<ul class="header-social-icons social-icons d-none d-sm-block">
+											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										</ul>
 										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 											<i class="fas fa-bars"></i>
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="header-column justify-content-end d-none d-lg-flex"></div>
 						</div>
-					</div>					
+					</div>
 				</div>
 ';
 ?>

@@ -106,7 +106,7 @@
 							<div class="flip-front p-5">
 								<div class="flip-content my-4">
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">FIRST STEP</h4>
+									<h4 class="font-weight-bold text-color-primary text-4">changes are done</h4>
 									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
 								</div>
 							</div>

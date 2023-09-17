@@ -86,7 +86,7 @@
 										</div>
 										<div class="text-center pt-3">
 											<strong class="font-weight-extra-bold text-13 text-lg-14">350<sup class="sup-text-small ps-1">+</sup></strong>
-											<label class="font-weight-normal text-3 px-lg-4"> of clients around the world</label>
+											<label class="font-weight-normal text-3 px-lg-4"> of  around the world</label>
 										</div>
 									</div>
 								</div>

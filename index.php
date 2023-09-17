@@ -68,7 +68,7 @@
 											<h2 class="text-7 font-weight-semibold mb-2">Personalized learning and best teacher about a specific topic</h2>
 										</div>
 										<div class="col-lg-10">
-											<p class="text-3 line-height-9 opacity-7">Tejesh</p>
+											<p class="text-3 line-height-9 opacity-7">B.Tejesh</p>
 											<a href="#" class="d-inline-flex align-items-center btn btn-dark text-color-light font-weight-bold px-4 btn-py-2 text-2 rounded">VIEW OUR SERVICES <i class="fa fa-arrow-right ms-2 ps-1 text-3"></i></a>
 										</div>
 									</div>

@@ -65,7 +65,7 @@
 								<div class="col-md-8 order-2 order-md-1 appear-animation" data-appear-animation="fadeInRightShorter">
 									<div class="row text-center text-md-start mb-5 pb-5">
 										<div class="col-lg-7">
-											<h2 class="text-7 font-weight-semibold mb-2">Personalized learning and best teacher about a specific topic</h2>
+											<h2 class="text-7 font-weight-semibold mb-2">Rishitha , Tejesh , Pallavi , Puneeth , Sathwik , Karthik </h2>
 										</div>
 										<div class="col-lg-10">
 											<p class="text-3 line-height-9 opacity-7">B.Tejesh</p>
@@ -78,7 +78,7 @@
 									<div class="owl-carousel owl-theme nav-style-3 nav-light dots-light text-color-light" data-plugin-options="{'items': 1, 'margin': 100, 'loop': true, 'nav': true, 'dots': true, 'stagePadding': 60, 'autoHeight': true}">
 										<div class="text-center pt-3">
 											<strong class="font-weight-extra-bold text-13 text-lg-14">100<sup class="sup-text-small ps-1">%</sup></strong>
-											<label class="font-weight-normal text-3 px-lg-4"> of  users using Porto</label>
+											<label class="font-weight-normal text-3 px-lg-4"> of users using Porto</label>
 										</div>
 										<div class="text-center pt-3">
 											<strong class="font-weight-extra-bold text-13 text-lg-14">50<sup class="sup-text-small ps-1">+</sup></strong>
@@ -86,7 +86,7 @@
 										</div>
 										<div class="text-center pt-3">
 											<strong class="font-weight-extra-bold text-13 text-lg-14">350<sup class="sup-text-small ps-1">+</sup></strong>
-											<label class="font-weight-normal text-3 px-lg-4"> of  around the world</label>
+											<label class="font-weight-normal text-3 px-lg-4"> of around the world</label>
 										</div>
 									</div>
 								</div>

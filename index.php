@@ -65,7 +65,7 @@
 								<div class="col-md-8 order-2 order-md-1 appear-animation" data-appear-animation="fadeInRightShorter">
 									<div class="row text-center text-md-start mb-5 pb-5">
 										<div class="col-lg-7">
-											<h2 class="text-7 font-weight-semibold mb-2">rishitha kanumuri</h2>
+											<h2 class="text-7 font-weight-semibold mb-2">Personalized learning and best teacher about a specific topic</h2>
 										</div>
 										<div class="col-lg-10">
 											<p class="text-3 line-height-9 opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat id sapien ac varius. Fusce hendrerit consectetur adipiscing eli ligula.</p>

@@ -1,40 +1,9 @@
-<?php 
+<?php
 echo '
 <div class="header-body border-color-primary border-bottom-0">
 					<div class="header-top-fixed header-top-simple-border-bottom">
-						<div class="container">
-							<div class="header-row py-2">
-								<div class="header-column justify-content-start">
-									<div class="header-row">
-									
-										<nav class="header-nav-top">
-											<ul class="nav nav-pills">
-												<li class="nav-item">
-													<a href="mailto:mail@domain.com"><i class="far fa-envelope text-4 text-color-primary" style="top: 1px;"></i> personaliz_Ed@gmail.com</a>
-												</li>
-												<li class="nav-item">
-													<a href="tel:123-456-7890"><i class="fa-solid fa-phone text-4 text-color-primary" style="top: 0;"></i> 123-456-7890</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-								<div class="header-column justify-content-end">
-									<div class="header-row">
-									<nav class="header-nav-top">
-									<ul class="nav nav-pills text-uppercase text-2">
-										<li class="nav-item nav-item-anim-icon d-none d-md-block">
-											<a href="#" class="btn btn-outline btn-rounded btn-primary py-2 px-3 m-2">Sign Up	</a>
-										</li>
-										<li class="nav-item nav-item-anim-icon d-none d-md-block">
-											<a class="nav-link" href="contact-us.html"><i class="fas fa-angle-right"></i> Contact Us</a>
-										</li>
-									</ul>
-								</nav>
-									</div>
-								</div>
-							</div>
-						</div>
+						
+					
 					</div>
 					<div class="header-container container">
 						<div class="header-row">
@@ -989,4 +958,3 @@ echo '
 					</div>
 				</div>
 ';
-?>

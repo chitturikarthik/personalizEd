@@ -134,7 +134,7 @@
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light">Content</h4>
-									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+									<p class="font-weight-light text-color-light opacity-5">Your feedback matters! Share your experiences and rate the content</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
 								</div>
 							</div>

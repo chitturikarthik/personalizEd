@@ -155,7 +155,7 @@
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light">Third Step</h4>
 									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN MORE</a>
+									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
 								</div>
 							</div>
 						</div>

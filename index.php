@@ -106,15 +106,15 @@
 							<div class="flip-front p-5">
 								<div class="flip-content my-4">
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">changes are done</h4>
+									<h4 class="font-weight-bold text-color-primary text-4">Learning Intelligence Test</h4>
 									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
 								</div>
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light">Questionnaire</h4>
-									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN MORE</a>
+									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
+									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Take test</a>
 								</div>
 							</div>
 						</div>
@@ -126,7 +126,7 @@
 							<div class="flip-front p-5">
 								<div class="flip-content my-4">
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">Hello world</h4>
+									<h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
 								</div>
 							</div>

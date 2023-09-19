@@ -133,7 +133,7 @@
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light">Third Step</h4>
+									<h4 class="font-weight-bold text-color-light">Second Step</h4>
 									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
 								</div>
@@ -153,7 +153,7 @@
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+									<h4 class="font-weight-bold text-color-light">Third Step</h4>
 									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN MORE</a>
 								</div>
@@ -189,19 +189,7 @@
 
 			<section class="section section-no-border section- section-height-3 bg-color-grey-scale-3 text-center mt-0">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-9 col-lg-9">
-							<div class="call-to-action-content">
-								<h2 class="font-weight-normal text-6 mb-0">Porto is <strong class="font-weight-extra-bold">everything</strong> you need to create an <strong class="font-weight-extra-bold">awesome</strong> website!</h2>
-								<p class="mb-0">The best HTML Site Template on ThemeForest</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-lg-3">
-							<div class="call-to-action-btn">
-								<a class="btn btn-badge btn-primary font-weight-bold px-4 mt-4 mt-md-2 mb-2" href="#">BUY NOW<span class="badge badge-dark badge-sm rounded-pill text-uppercase px-2 py-1">Only $16</span></a>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</section>
 

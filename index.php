@@ -134,7 +134,7 @@
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light">Content</h4>
-									<p class="font-weight-light text-color-light opacity-5">Your feedback matters! Share your experiences and rate the content</p>
+									<p class="font-weight-light text-color-light opacity-5">hv gchghsnjafguysa</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
 								</div>
 							</div>
@@ -148,7 +148,7 @@
 								<div class="flip-content my-4">
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
 									<h4 class="font-weight-bold text-color-primary text-4">Rate and Share</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+									<p>Your feedback matters! Share your experiences and rate content</p>
 								</div>
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">

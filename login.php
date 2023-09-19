@@ -63,20 +63,20 @@
               <div class="row">
                 <div class="form-group col">
                   <label class="form-label">Email Address</label>
-                  <input type="email" name="username" id="username" value="" class="form-control form-control-md" required />
+                  <input type="email" name="username" id="username" value="" class="form-control form-control-md" required autocomplete="on" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col">
                   <!-- <a class="float-end" href="#">(Lost Password?)</a> -->
                   <label class="form-label">Password</label>
-                  <input type="password" name="pwd" id="pwd" value="" class="form-control form-control-md" required />
+                  <input type="password" name="pwd" id="pwd" value="" class="form-control form-control-md" required autocomplete="on" />
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group col">
-                  <label class="form-label">Login as</label>
+                  <label class="form-label">Who are you?</label>
                   <select class="form-control form-control-md" name="role" id="role">
                     <option>Select your role</option>
                     <option value="0">Student</option>

@@ -74,7 +74,7 @@
 									</div>
 								</div>
 								<div class="col-md-4 text-center order-1 order-md-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
-									<p class="text-1 mb-2 opacity-7">Personalized Learning</p>
+									<p class="text-1 mb-2 opacity-7">Learning Intelligence</p>
 									<div class="owl-carousel owl-theme nav-style-3 nav-light dots-light text-color-light" data-plugin-options="{'items': 1, 'margin': 100, 'loop': true, 'nav': true, 'dots': true, 'stagePadding': 60, 'autoHeight': true}">
 										<div class="text-center pt-3">
 											<strong class="font-weight-extra-bold text-13 text-lg-14">9<sup class="sup-text-small ps-1"></sup></strong>
@@ -183,9 +183,21 @@
 				</div>
 			</div>
 
-			<section class="section section-no-border section- section-height-3 bg-light text-center mt-0">
+			<section class="section section-no-border section- section-height-3 bg-color-grey-scale-3 text-center mt-0">
 				<div class="container">
-
+					<div class="row">
+						<div class="col-md-9 col-lg-9">
+							<div class="call-to-action-content">
+								<h2 class="font-weight-normal text-6 mb-0">Porto is <strong class="font-weight-extra-bold">everything</strong> you need to create an <strong class="font-weight-extra-bold">awesome</strong> website!</h2>
+								<p class="mb-0">The best HTML Site Template on ThemeForest</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-lg-3">
+							<div class="call-to-action-btn">
+								<a class="btn btn-badge btn-primary font-weight-bold px-4 mt-4 mt-md-2 mb-2" href="#">BUY NOW<span class="badge badge-dark badge-sm rounded-pill text-uppercase px-2 py-1">Only $16</span></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 

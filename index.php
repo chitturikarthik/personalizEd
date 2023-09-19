@@ -167,7 +167,7 @@
 					<div class="col-md-7 col-lg-7">
 						<div class="row">
 							<div class="col-lg-9">
-								<h2 class="font-weight-bold text-7 mb-3">About Us</h2>
+								<h2 class="font-weight-bold text-7 mb-3">Concepts</h2>
 								<p class="text-4">We propose a comprehensive model/software to enable personalized learning experiences for students.This solution consists of four key steps:</p>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-4 px-5 px-md-3">
-						<img class="img-fluid" src="img/generic/about.png" alt="" />
+						<img class="img-fluid" src="img/generic/concept-logo.jpg" alt="" />
 					</div>
 				</div>
 			</div>

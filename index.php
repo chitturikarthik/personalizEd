@@ -167,12 +167,15 @@
 						<div class="row">
 							<div class="col-lg-9">
 								<h2 class="font-weight-bold text-7 mb-3">About Us</h2>
-								<p class="text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id varius nunc.</p>
+								<p class="text-4">We propose a comprehensive model/software to enable personalized learning experiences for students.This solution consists of four key steps:</p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-7">
-								<p class="text-2 pe-lg-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex, et faucibus lacus.</p>
+								<p class="text-2 pe-lg-2">Step 1: Assessing Learning Intelligence</p>  
+								<p class="text-2 pe-lg-2">Step 2: Personalized Content Recommendations </p>
+								<p class="text-2 pe-lg-2">Step 3: Teacher Content Contribution</p>
+								<p class="text-2 pe-lg-2">Step 4: Content Evaluation and Selection</p>
 								<a href="#" class="d-inline-flex align-items-center btn btn-dark text-color-light font-weight-bold px-4 btn-py-2 text-2 rounded mt-2 mb-5">LEARN MORE NOW <i class="fa fa-arrow-right ms-2 ps-1 text-3"></i></a>
 							</div>
 						</div>

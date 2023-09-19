@@ -57,7 +57,7 @@
 
 		<div role="main" class="main">
 
-			<section class="section section-primary section-no-border my-0">
+			<section class="section section-primary section-no-border my-0" style="background-image: url(img/generic/generic-corporate-17-13.png); background-size: cover; background-position: center;">
 				<div class="container mb-5 pb-5">
 					<div class="row justify-content-center">
 						<div class="col">
@@ -113,7 +113,7 @@
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
+									<p class="font-weight-light text-color-light opacity-5"></p>
 									<a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
 								</div>
 							</div>
@@ -131,9 +131,9 @@
 									
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light">Content</h4>
+									<h4 class="font-weight-bold text-color-light"></h4>
 									<p class="font-weight-light text-color-light opacity-5">hv gchghsnjafguysa</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
 								</div>
@@ -151,10 +151,10 @@
 									<p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light">Third Step</h4>
-									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+									<h4 class="font-weight-bold text-color-light"></h4>
+									<p class="font-weight-light text-color-light opacity-5">a</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
 								</div>
 							</div>

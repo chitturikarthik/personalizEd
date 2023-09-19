@@ -182,7 +182,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-4 px-5 px-md-3">
-						<img class="img-fluid" src="img/generic/generic-corporate-17-2.png" alt="" />
+						<img class="img-fluid" src="img/generic/about.png" alt="" />
 					</div>
 				</div>
 			</div>

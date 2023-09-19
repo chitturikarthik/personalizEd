@@ -69,7 +69,7 @@
 											</h2>
 										</div>
 										<div class="col-lg-10">
-											<a href="login.php" class="d-inline-flex align-items-center btn btn-dark text-color-light font-weight-bold px-4 btn-py-2 text-2 rounded">VIEW CONTENT <i class="fa fa-arrow-right ms-2 ps-1 text-3"></i></a>
+											
 										</div>
 									</div>
 								</div>
@@ -110,11 +110,11 @@
 									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light">Questionnaire</h4>
+									<h4 class="font-weight-bold text-color-light"></h4>
 									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
-									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Take test</a>
+									<a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
 								</div>
 							</div>
 						</div>

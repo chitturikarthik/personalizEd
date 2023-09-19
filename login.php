@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,25 +59,25 @@
             <h4 class="color-primary font-weight-semibold text-4 mb-3 text-center">
               Login to your account!
             </h4>
-            <form action="" id="frmSignIn" method="post" class="needs-validation">
+            <form action="access_check.php" id="frmSignIn" method="post" class="needs-validation">
               <div class="row">
                 <div class="form-group col">
                   <label class="form-label">Email Address</label>
-                  <input type="text" name="username" value="" class="form-control form-control-md" required />
+                  <input type="email" name="username" id="username" value="" class="form-control form-control-md" required />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col">
                   <!-- <a class="float-end" href="#">(Lost Password?)</a> -->
                   <label class="form-label">Password</label>
-                  <input type="password" name="password" value="" class="form-control form-control-md" required />
+                  <input type="password" name="pwd" id="pwd" value="" class="form-control form-control-md" required />
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group col">
-                  <label class="form-label ">Login as</label>
-                  <select class="form-control form-control-md">
+                  <label class="form-label">Login as</label>
+                  <select class="form-control form-control-md" name="role" id="role">
                     <option>Select your role</option>
                     <option value="0">Student</option>
                     <option value="1">Teacher</option>
@@ -90,7 +91,7 @@
                 </div>
                 <div class="form-group col-lg-6">
                   <a class="btn btn-danger btn-modern float-end m-2" href="index.php">Go Back</a>
-                  <input type="submit" value="Login" class="btn btn-primary btn-modern float-end m-2" />
+                  <button type="submit" name="accesscheck" class="btn btn-primary btn-modern float-end m-2">Login<button>
                 </div>
 
               </div class="row">

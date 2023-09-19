@@ -31,8 +31,6 @@
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
-	<link rel="stylesheet" href="vendor/bootstrap-star-rating/css/star-rating.min.css">
-	<link rel="stylesheet" href="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.css">
 
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="css/theme.css">
@@ -85,9 +83,7 @@
 							<article class="post post-large blog-single-post border-0 m-0 p-0">
 								<div class="post-image ms-0">
 									<div class="ratio ratio-16x9">
-										<videowidth="640" height="360" allowfullscreen>
-											<source src="https://www.youtube.com/watch?v=_x1MmVhLOt4&list=PLhb7SOmGNUc4EBVjd7x5TiEyOKXt71whE&index=2" type="video/mp4	">
-											</video>
+										<iframe src="https://player.vimeo.com/video/45830194?color=ffffff&title=0&byline=0&portrait=0&badge=0" width="640" height="360" allowfullscreen></iframe>
 									</div>
 								</div>
 
@@ -136,12 +132,43 @@
 											<div id="description" class="tabs tabs-simple tabs-simple-full-width-line tabs-product tabs-dark mb-2">
 												<ul class="nav nav-tabs justify-content-start">
 													<li class="nav-item"><a class="nav-link active font-weight-bold text-3 text-uppercase py-2 px-3" href="#productDescription" data-bs-toggle="tab">Description</a></li>
+													<li class="nav-item"><a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#productInfo" data-bs-toggle="tab">Additional Information</a></li>
 													<li class="nav-item"><a class="nav-link nav-link-reviews font-weight-bold text-3 text-uppercase py-2 px-3" href="#productReviews" data-bs-toggle="tab">Reviews (2)</a></li>
 												</ul>
 												<div class="tab-content p-0">
 													<div class="tab-pane px-0 py-3 active" id="productDescription">
 														<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. </p>
 														<p class="m-0">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+													</div>
+													<div class="tab-pane px-0 py-3" id="productInfo">
+														<table class="table table-striped m-0">
+															<tbody>
+																<tr>
+																	<th class="border-top-0">
+																		Size:
+																	</th>
+																	<td class="border-top-0">
+																		Unique
+																	</td>
+																</tr>
+																<tr>
+																	<th>
+																		Colors
+																	</th>
+																	<td>
+																		Red, Blue
+																	</td>
+																</tr>
+																<tr>
+																	<th>
+																		Material
+																	</th>
+																	<td>
+																		100% Leather
+																	</td>
+																</tr>
+															</tbody>
+														</table>
 													</div>
 													<div class="tab-pane px-0 py-3" id="productReviews">
 														<ul class="comments">

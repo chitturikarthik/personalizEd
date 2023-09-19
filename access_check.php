@@ -1,23 +1,34 @@
 <?php
+session_start();
 
-if ($response["success"]) {
-  session_start();
-  if (isset($_POST['accesscheck'])) {
-    $pin = $_POST['pwd'];
+if (isset($_POST['accesscheck'])) {
+  $email = $_POST['username'];
+  $mobile = $_POST['pwd'];
+  include 'connect.php';
 
-    include "../connect.php";
-    if ($pin == "Srkr@1980") {
-      $_SESSION["access"] = "Saana";
-      header("Location:dashboard.php");
-    } else {
-      header("Location:index.php");
-    }
+  $stmt = $conn->prepare("SELECT * FROM student_details WHERE email = ? AND mobile = ?");
+  $stmt->bind_param("ss", $email, $mobile);
+  $stmt->execute();
+  $result = $stmt->get_result()->fetch_assoc();
+
+  if ($result) {
+    // Valid credentials, set the session and redirect to student_dashboard.php
+    $_SESSION["access"] = "personalized";
+    $_SESSION["user-id"] = $email;
+    header("Location: student_dashboard.php");
+    exit();
   } else {
-    //clear session from globals
-    $_SESSION = array();
-    //clear session from disk  
-    session_destroy();
-    header("Location:index.php");
-    exit;
+    // Invalid credentials, redirect to index.php
+    header("Location: index.php");
+    exit();
   }
+
+  // $stmt->close();s
+} else {
+  // Clear session from globals
+  $_SESSION = array();
+  // Clear session from disk
+  session_destroy();
+  header("Location: index.php");
+  exit();
 }

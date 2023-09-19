@@ -100,66 +100,64 @@
 
 			<div class="container">
 				<div class="row" style="margin-top: -165px">
-					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-
-						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-							<div class="flip-front p-5">
-								<div class="flip-content my-4">
-									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">Learning Intelligence Test</h4>
-									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
-								</div>
-							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
-								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5"></p>
-									<a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-
-						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-							<div class="flip-front p-5">
-								<div class="flip-content my-4">
-									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
-									<p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
-									
-								</div>
-							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
-								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5">hv gchghsnjafguysa</p>
-									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+        <div class="flip-front p-5">
+            <div class="flip-content my-4">
+                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
+                <h4 class="font-weight-bold text-color-primary text-4">Learning Intelligence Test</h4>
+                <p>Analysis of Learning Intelligence <br> Answer a few questions to let us know your type of learning intelligence.</p>
+            </div>
+        </div>
+        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
+            <div class="flip-content my-4">
+                <h4 class="font-weight-bold text-color-light"></h4>
+                <p class="font-weight-light text-color-light opacity-5"></p>
+                <a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+        <div class="flip-front p-5">
+            <div class="flip-content my-4">
+                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
+                <h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
+                <p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
+            </div>
+        </div>
+        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
+            <div class="flip-content my-4">
+                <h4 class="font-weight-bold text-color-light"></h4>
+                <p class="font-weight-light text-color-light opacity-5"></p>
+                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-							<div class="flip-front p-5">
-								<div class="flip-content my-4">
-									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
-									<h4 class="font-weight-bold text-color-primary text-4">Rate and Share</h4>
-									<p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
-								</div>
-							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
-								<div class="flip-content my-4">
-									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5">a</p>
-									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
-								</div>
-							</div>
-						</div>
-					</div>
+
+					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+        <div class="flip-front p-5">
+            <div class="flip-content my-4">
+                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
+                <h4 class="font-weight-bold text-color-primary text-4">Rate and Share</h4>
+                <p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
+            </div>
+        </div>
+        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
+            <div class="flip-content my-4">
+                <h4 class="font-weight-bold text-color-light"></h4>
+                <p class="font-weight-light text-color-light opacity-5"></p>
+                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 				</div>
 
 

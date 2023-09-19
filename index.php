@@ -128,7 +128,7 @@
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
 									<h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
 									<p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
-									<p>Unlock a World of Knowledge: Dive into our treasure trove of educational resources, expert insights, and captivating content. With just a click, embark on a journey of discovery, exploration, and enrichment. There's a wealth of information waiting for you – are you ready to explore and expand your horizons? 📚🌟</p>
+									
 								</div>
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;">

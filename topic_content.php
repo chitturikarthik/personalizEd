@@ -57,7 +57,7 @@
 						<!-- Blog Details-->
 						<div class="blog-view">
 							<div class="blog-single-post">
-								<a href="blog.html" class="back-btn"><i class="feather-chevron-left"></i> Back</a>
+								<a href="s_dashboard.php" class="back-btn"><i class="feather-chevron-left"></i> Back</a>
 								<div class="blog-image">
 									<a href="javascript:void(0);">
 										<!-- <img alt="" src="assets/img/category/blog-detail.jpg" class="img-fluid"> -->

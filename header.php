@@ -1,13 +1,12 @@
 <div class="header-body border-color-primary border-bottom-0">
-	<div class="header-top-fixed header-top-simple-border-bottom">
-	</div>
+
 	<div class="header-container container">
 		<div class="header-row">
 			<div class="header-column">
 				<div class="header-row">
 					<div class="header-logo">
-						<a href="index.php">
-							<img alt="Porto" width="220" height="70" data-sticky-width="200" data-sticky-height="60" src="img/logo-default-slim.png">
+						<a href="index.html">
+							<img alt="Porto" width="250" height="80" data-sticky-width="180" data-sticky-height="60" src="img/logo-default-slim.png">
 						</a>
 					</div>
 				</div>
@@ -19,41 +18,42 @@
 							<nav class="collapse">
 								<ul class="nav nav-pills" id="mainNav">
 									<li class="dropdown">
-										<a class="dropdown-item" href="">
+										<a class="dropdown-item dropdown-toggle active" href="index.php">
 											Home
 										</a>
 									</li>
 									<li class="dropdown dropdown-mega">
-										<a class="dropdown-item" href="">
-											Concept
+										<a class="dropdown-item dropdown-toggle" href="">
+											Our Concept
 										</a>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-item" href="#">
-											Approach
+										<a class="dropdown-item dropdown-toggle" href="#">
+											Our Approach
 										</a>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-item" href="#">
-											Suggestions
+										<a class="dropdown-item dropdown-toggle" href="#">
+											Support
 										</a>
 									</li>
+									<li class="dropdown">
+										<a class="dropdown-item dropdown-toggle" href="#">
+											Log In
+										</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown-submenu">
+												<a class="dropdown-item" href="s_login.php">Student Login</a>
+											</li>
+											<li class="dropdown-submenu">
+												<a class="dropdown-item" href="t_login.php">Teacher Login</a>
+											</li>
+									</li>
+								</ul>
+								</li>
 								</ul>
 							</nav>
 						</div>
-
-						<div>
-							<a href="login.php" target="" class="btn btn-outline btn-rounded btn-primary py-2 px-3 mx-2">Login</a>
-							<!-- <a class="btn btn-rounded btn-primary py-2 px-4 mx-2">Sign Up</a> -->
-						</div>
-
-						<!-- <ul class="header-social-icons social-icons d-none d-sm-block">
-							<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-							<li class="social-icons-instagram"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-instagram"></i></a></li>
-							<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-						</ul> -->
-
-
 						<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
 							<i class="fas fa-bars"></i>
 						</button>

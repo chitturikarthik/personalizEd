@@ -213,7 +213,7 @@
 					<div class="col-lg-4 px-lg-1 mb-3 appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="600">
 						<span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
 							<span class="thumb-info-wrapper overlay overlay-show overlay-op-8">
-								<img src="img/gallery/gallery-9.jpg" class="img-fluid" alt="">
+								<img src="img/gallery/c-logo.png" class="img-fluid" alt="">
 								<span class="thumb-info-title bg-transparent mb-4 ps-4 ms-2">
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8">LOREM IPSUM DOLOR SIT</span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">C Programming</span>

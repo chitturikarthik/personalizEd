@@ -255,7 +255,7 @@
 								</div>
 								<div class="process-step-content">
 									<h4 class="mb-1 text-4 font-weight-bold">Beginner Level</h4>
-									<p class="mb-0"> </p>
+									<p class="mb-0">A beginner-level course provides foundational knowledge and skills for individuals with no prior experience in a specific subject or skill. </p>
 								</div>
 							</div>
 							<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
@@ -264,7 +264,7 @@
 								</div>
 								<div class="process-step-content">
 									<h4 class="mb-1 text-4 font-weight-bold">Intermediate Level</h4>
-									<p class="mb-0"></p>
+									<p class="mb-0">An intermediate-level course builds upon foundational knowledge, delving deeper into advanced concepts and practical applications to further develop expertise in a specific subject or skill.</p>
 								</div>
 							</div>
 							<div class="process-step appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
@@ -273,7 +273,7 @@
 								</div>
 								<div class="process-step-content">
 									<h4 class="mb-1 text-4 font-weight-bold">Advanced Level</h4>
-									<p class="mb-0"></p>
+									<p class="mb-0">An advanced-level course is designed for individuals who have already mastered the fundamental concepts and skills in a specific subject or field. This course delves into advanced and specialized topics, encouraging independent research and critical thinking, and aims to prepare participants for expert-level proficiency and leadership roles within the subject area.</p>
 								</div>
 							</div>
 							<!-- <div class="process-step pb-4 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">

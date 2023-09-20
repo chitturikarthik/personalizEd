@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2023 at 12:45 PM
+-- Generation Time: Sep 20, 2023 at 02:54 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -115,7 +115,10 @@ INSERT INTO `student_details` (`id`, `student_name`, `email`, `mobile`, `learnin
 (73, 'VATAPALLI GNANA SEKHAR', '258gnanasekhar.v@gmail.com', '7989649045', ''),
 (74, 'VEERAVALLI SATYA VENKATA SRINADH', 'srinadhveeravalli123@gmail.com', '9606557489', ''),
 (75, 'VEGESNA PRADEEPTHI', 'pradeepthipradeepthi4@gmail.com', '8374811247', ''),
-(76, 'VILLURI MOHINI MANGA LAKSHMI MANASA', 'manasavilluri55@gmail.com', '8639557638', '');
+(76, 'VILLURI MOHINI MANGA LAKSHMI MANASA', 'manasavilluri55@gmail.com', '8639557638', ''),
+(80, 'Karthik Chitturi', 'karthikch.official@gmail.com', '7842353004', ''),
+(81, 'Karthik Chitturi', 'sathwikjrs@gmail.com', '8639796025', ''),
+(82, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -129,6 +132,25 @@ CREATE TABLE `teacher_details` (
   `email` varchar(50) NOT NULL,
   `mobile` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `teacher_details`
+--
+
+INSERT INTO `teacher_details` (`id`, `teacher_name`, `email`, `mobile`) VALUES
+(1, 'suresh', 'suresh_csd@srkrec.edu.in', '9866600002'),
+(2, 'Karthik Chitturi', 'suresh_csd@srkrec.edu.in', '9866600002'),
+(3, 'Karthik Chitturi', 'suresh_csd@srkrec.edu.in', '9866600002'),
+(4, 'Karthik Chitturi', 'karthikch.official@gmail.com', '9866600002'),
+(5, '', '', ''),
+(6, '', '', ''),
+(7, '', '', ''),
+(8, 'Karthik Chitturi', 'sathwikjrs@gmail.com', '9866600002'),
+(9, '', '', ''),
+(10, '', '', ''),
+(11, '', '', ''),
+(12, '', '', ''),
+(13, 'Karthik Chitturi', 'karthikch.official@gmail.com', '9866600002');
 
 --
 -- Indexes for dumped tables
@@ -154,13 +176,13 @@ ALTER TABLE `teacher_details`
 -- AUTO_INCREMENT for table `student_details`
 --
 ALTER TABLE `student_details`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT for table `teacher_details`
 --
 ALTER TABLE `teacher_details`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

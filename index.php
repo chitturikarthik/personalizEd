@@ -203,7 +203,7 @@
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8">LOREM IPSUM DOLOR SIT</span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">Web Development</span>
 									<span class="thumb-info-show-more-content pe-3">
-										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex.</p>
+										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2">magna ex.</p>
 										<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-2 btn-py-1 text-1 rounded"><span class="text-2 py-1 ps-2">LEARN MORE</span> <i class="fa fa-arrow-right ms-2 me-2 ps-4 text-3"></i></a>
 									</span>
 								</span>

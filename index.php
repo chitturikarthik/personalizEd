@@ -100,64 +100,66 @@
 
 			<div class="container">
 				<div class="row" style="margin-top: -165px">
-				<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-        <div class="flip-front p-5">
-            <div class="flip-content my-4">
-                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
-                <h4 class="font-weight-bold text-color-primary text-4">Learning Intelligence Test</h4>
-                <p>Analysis of Learning Intelligence <br> Answer a few questions to let us know your type of learning intelligence.</p>
-            </div>
-        </div>
-        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
-            <div class="flip-content my-4">
-                <h4 class="font-weight-bold text-color-light"></h4>
-                <p class="font-weight-light text-color-light opacity-5"></p>
-                <a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
-            </div>
-        </div>
-    </div>
-</div>
+					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+							<div class="flip-front p-5">
+								<div class="flip-content my-4">
+									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">01</strong>
+									<h4 class="font-weight-bold text-color-primary text-4">Learning Intelligence Test</h4>
+									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
+								</div>
+							</div>
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
+								<div class="flip-content my-4">
+									<h4 class="font-weight-bold text-color-light"></h4>
+									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
+									<a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-        <div class="flip-front p-5">
-            <div class="flip-content my-4">
-                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
-                <h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
-                <p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
-            </div>
-        </div>
-        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
-            <div class="flip-content my-4">
-                <h4 class="font-weight-bold text-color-light"></h4>
-                <p class="font-weight-light text-color-light opacity-5"></p>
-                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+							<div class="flip-front p-5">
+								<div class="flip-content my-4">
+									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
+									<h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
+									<p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
+									
+								</div>
+							</div>
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
+								<div class="flip-content my-4">
+									<h4 class="font-weight-bold text-color-light"></h4>
+									<p class="font-weight-light text-color-light opacity-5">hv gchghsnjafguysa</p>
+									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">View content</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-    <div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
-        <div class="flip-front p-5">
-            <div class="flip-content my-4">
-                <strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
-                <h4 class="font-weight-bold text-color-primary text-4">Rate and Share</h4>
-                <p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
-            </div>
-        </div>
-        <div class="flip-back d-flex flex-column align-items-center justify-content-end p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
-            <div class="flip-content my-4">
-                <h4 class="font-weight-bold text-color-light"></h4>
-                <p class="font-weight-light text-color-light opacity-5"></p>
-                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+						<div class="card flip-card flip-card-3d bg-transparent text-center rounded-0">
+							<div class="flip-front p-5">
+								<div class="flip-content my-4">
+									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
+									<h4 class="font-weight-bold text-color-primary text-4">Rate and Share</h4>
+									<p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
+								</div>
+							</div>
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
+								<div class="flip-content my-4">
+									<h4 class="font-weight-bold text-color-light"></h4>
+									<p class="font-weight-light text-color-light opacity-5">a</p>
+									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 
@@ -165,7 +167,7 @@
 					<div class="col-md-7 col-lg-7">
 						<div class="row">
 							<div class="col-lg-9">
-								<h2 class="font-weight-bold text-7 mb-3">Concepts</h2>
+								<h2 class="font-weight-bold text-7 mb-3">About Us</h2>
 								<p class="text-4">We propose a comprehensive model/software to enable personalized learning experiences for students.This solution consists of four key steps:</p>
 							</div>
 						</div>
@@ -180,7 +182,7 @@
 						</div>
 					</div>
 					<div class="col-md-5 col-lg-4 px-5 px-md-3">
-						<img class="img-fluid" src="img/generic/concept-logo.jpg" alt="" />
+						<img class="img-fluid" src="img/generic/about.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -201,7 +203,7 @@
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8">LOREM IPSUM DOLOR SIT</span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">Web Development</span>
 									<span class="thumb-info-show-more-content pe-3">
-										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex.</p>
+										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2">magna ex.</p>
 										<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-2 btn-py-1 text-1 rounded"><span class="text-2 py-1 ps-2">LEARN MORE</span> <i class="fa fa-arrow-right ms-2 me-2 ps-4 text-3"></i></a>
 									</span>
 								</span>
@@ -211,12 +213,12 @@
 					<div class="col-lg-4 px-lg-1 mb-3 appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="600">
 						<span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
 							<span class="thumb-info-wrapper overlay overlay-show overlay-op-8">
-								<img src="img/gallery/c-logo.png" class="img-fluid" alt="">
+								<img src="img/gallery/gallery-9.jpg" class="img-fluid" alt="">
 								<span class="thumb-info-title bg-transparent mb-4 ps-4 ms-2">
-									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8"></span>
+									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8">LOREM IPSUM DOLOR SIT</span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">C Programming</span>
 									<span class="thumb-info-show-more-content pe-3">
-										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2"></p>
+										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc. Vivamus bibendum magna ex.</p>
 										<a href="#" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-2 btn-py-1 text-1 rounded"><span class="text-2 py-1 ps-2">LEARN MORE</span> <i class="fa fa-arrow-right ms-2 me-2 ps-4 text-3"></i></a>
 									</span>
 								</span>
@@ -288,14 +290,19 @@
 						</div>
 
 					</div>
-					<div class="col-lg-4 px-5 pt-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+					<!-- <div class="col-lg-4 px-5 pt-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
 						<div class="testimonial testimonial-style-7 testimonial-primary py-5 mt-4">
-							<blockquote>
-								<p class="text-6 line-height-9 mb-0 mt-4">Personalize your learning based on your learning intelligence.</p>
-							</blockquote>
+							
+								<p class="text-6 line-height-9 mb-0 mt-4" style="background-image: url(img/generic/generic-corporate-17-1.png);></p>
+							
 							<a class="btn btn-outline btn-light text-color-light text-color-hover-dark font-weight-bold mb-3" href="#">LEARN MORE</a>
 						</div>
+					</div> -->
+					
+					<div class="col-md-5 col-lg-4 px-5 px-md-3">
+						<img class="img-fluid" src="img/generic/generic-corporate-17-15.png" alt="" />
 					</div>
+							
 
 				</div>
 

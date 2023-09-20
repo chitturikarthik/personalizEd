@@ -46,17 +46,17 @@ session_start();
 						<div class="login-right-wrap">
 							<h1>Welcome to PersonalizEd</h1>
 							<p class="account-subtitle">Need an account? <a href="s_register.php">Register</a></p>
-							<h2>Log in</h2>
+							<h2>Student Log in</h2>
 							<!-- Form -->
 							<form method="post" action="access_check.php">
 								<div class="form-group">
 									<label>Username <span class="login-danger">*</span></label>
-									<input class="form-control" type="email" name="email" id="email">
+									<input class="form-control" type="email" name="email" id="email" required>
 									<span class="profile-views"><i class="fas fa-user-circle"></i></span>
 								</div>
 								<div class="form-group">
 									<label>Password <span class="login-danger">*</span></label>
-									<input class="form-control pass-input" type="number" name="pwd" id="pwd">
+									<input class="form-control pass-input" type="number" name="pwd" id="pwd" required>
 									<span class="profile-views feather-eye toggle-password"></span>
 								</div>
 

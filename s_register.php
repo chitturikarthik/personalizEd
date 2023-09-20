@@ -69,27 +69,6 @@
                                 </div>
                             </form>
                             <!-- /Form -->
-                            <?php
-if (isset($_POST['submit'])) {
-    $full_name = $_POST['full_name'];
-    $email = $_POST['email'];
-    // ... (get other form field values)
-
-    // Compose the email message
-    $to = "recipient_email@example.com"; // Replace with the recipient's email address
-    $subject = "Welcome to Our Website";
-    $message = "Thank you for signing up on our website, $full_name!";
-    $headers = "From: your_email@gmail.com"; // Replace with your email address
-
-    // Send the email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Email sent successfully!";
-    } else {
-        echo "Email sending failed. Please try again later.";
-    }
-}
-?>
-
 
                         </div>
                     </div>

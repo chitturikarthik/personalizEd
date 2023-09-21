@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $Fullname, $Email, $Mobile);
 
     if ($stmt->execute()) {
-        header("Location: t_login.php");
+        header("Location: s_login.php");
     } else {
         echo "Error: " . $stmt->error;
     }
@@ -71,17 +71,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <label>Full Name <span class="login-danger">*</span></label>
-                                    <input name="fullname" class="form-control" type="text">
+                                    <input required name="fullname" class="form-control" type="text">
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Email <span class="login-danger">*</span></label>
-                                    <input name="email" class="form-control" type="text">
+                                    <input required name="email" class="form-control" type="text">
                                     <span class="profile-views"><i class="fas fa-envelope"></i></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Mobile <span class="login-danger">*</span></label>
-                                    <input name="mobile" class="form-control pass-input" type="text">
+                                    <input required name="mobile" class="form-control pass-input" type="text">
                                     <span class="profile-views feather-eye toggle-password"></span>
                                 </div>
                                 <div class=" dont-have">Already Registered? <a href="s_login.php">Login</a></div>

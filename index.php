@@ -69,7 +69,7 @@
 											</h2>
 										</div>
 										<div class="col-lg-10">
-											
+
 										</div>
 									</div>
 								</div>
@@ -128,7 +128,7 @@
 									<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">02</strong>
 									<h4 class="font-weight-bold text-color-primary text-4">Explore Content</h4>
 									<p>Unlock a World of Knowledge with just a click. There's a wealth of information waiting for you.</p>
-									
+
 								</div>
 							</div>
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
@@ -157,30 +157,24 @@
 									<p class="font-weight-light text-color-light opacity-5">a</p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
 								</div>
+								<a name="concept" ></a>
 							</div>
+							
 						</div>
-					</div>
+					</div>					
 				</div>
-
 
 				<div class="row text-center text-md-start align-items-center mt-4 appear-animation mt-5" data-appear-animation="fadeInRightShorter">
 					<div class="col-md-7 col-lg-7">
 						<div class="row">
-							<div class="col-lg-9">
-
-       
-
-
+							<div class="col-lg-9">								
 								<h2 class="font-weight-bold text-7 mb-3">Concepts</h2>
-								
 								<p class="text-4">We propose a comprehensive model/software to enable personalized learning experiences for students.This solution consists of four key steps:</p>
-
-								
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-7">
-								<p class="text-2 pe-lg-2">Step 1: Assessing Learning Intelligence</p>  
+								<p class="text-2 pe-lg-2">Step 1: Assessing Learning Intelligence</p>
 								<p class="text-2 pe-lg-2">Step 2: Personalized Content Recommendations </p>
 								<p class="text-2 pe-lg-2">Step 3: Teacher Content Contribution</p>
 								<p class="text-2 pe-lg-2">Step 4: Content Evaluation and Selection</p>
@@ -188,18 +182,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5 col-lg-4 px-5 px-md-3">
-						<img class="img-fluid" src="img/generic/concept-logo.jpg" alt="" />
+					
+					<div class="col-md-6 col-lg-4 px-5 px-md-3">
+						<img width="500" height="400" src="img/generic/concept-logo.jpg" alt="" />
 					</div>
+
 				</div>
 			</div>
 
-			<section class="section section-no-border section- section-height-3 bg-color-grey-scale-3 text-center mt-0">
-				<div class="container">
-					
-				</div>
-			</section>
-
+<section id="latest">
+			<h2 class="font-weight-bold text-7 m-5" style="text-align: center;">Latest</h2>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-4 ps-lg-0 pe-lg-2 mb-3 appear-animation" data-appear-animation="fadeInRightShorter">
@@ -211,7 +203,7 @@
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">Web Development</span>
 									<span class="thumb-info-show-more-content pe-3">
 										<p class="mb-0 text-1 line-height-9 pe-5 pb-3 me-5 mb-3 mt-2"></p>
-										
+
 									</span>
 								</span>
 							</span>
@@ -247,9 +239,11 @@
 					</div>
 				</div>
 			</div>
+</section>
 
+			<h2 class="font-weight-bold text-7 mb-3" style="text-align: center;">Approach</h2>
 
-
+			<a name="approach" ></a>
 			<div class="container">
 
 				<div class="row pt-4">
@@ -303,11 +297,11 @@
 							<a class="btn btn-outline btn-light text-color-light text-color-hover-dark font-weight-bold mb-3" href="#">LEARN MORE</a>
 						</div>
 					</div> -->
-					
+
 					<div class="col-md-5 col-lg-4 px-5 px-md-3">
 						<img class="img-fluid" src="img/generic/generic-corporate-17-15.png" alt="" />
 					</div>
-							
+
 
 				</div>
 

@@ -48,7 +48,7 @@ session_start();
 							<p class="account-subtitle">Need an account? <a href="s_register.php">Register</a></p>
 							<h2>Student Log in</h2>
 							<!-- Form -->
-							<form method="post" action="access_check.php">
+							<form method="post" action="student_access_check.php">
 								<div class="form-group">
 									<label>Username <span class="login-danger">*</span></label>
 									<input class="form-control" type="email" name="email" id="email" required>
@@ -62,6 +62,13 @@ session_start();
 
 								<div class="form-group">
 									<button class="btn btn-primary btn-block" type="submit" name="accesscheck">Login</button>
+								</div>
+								<div class="login-or">
+									<span class="or-line"></span>
+									<span class="span-or">or</span>
+								</div>
+								<div class="form-group text-center">
+									<a class="text-primary" href="index.php">Go Home</a>
 								</div>
 							</form>
 							<!-- /Form -->

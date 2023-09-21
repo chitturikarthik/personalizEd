@@ -1,7 +1,6 @@
-
-
-
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,9 +46,9 @@
 						<div class="login-right-wrap">
 							<h1>Welcome to PersonalizEd</h1>
 							<p class="account-subtitle">Need an account? <a href="t_register.php">Register</a></p>
-							<h2>Log in</h2>
+							<h2>Teacher Log in</h2>
 							<!-- Form -->
-							<form method="post" action="access_check.php">
+							<form method="post" action="teacher_access_check.php">
 								<div class="form-group">
 									<label>Username <span class="login-danger">*</span></label>
 									<input class="form-control" type="email" name="email" id="email" required>
@@ -63,6 +62,14 @@
 
 								<div class="form-group">
 									<button class="btn btn-primary btn-block" type="submit" name="accesscheck">Login</button>
+								</div>
+
+								<div class="login-or">
+									<span class="or-line"></span>
+									<span class="span-or">or</span>
+								</div>
+								<div class="form-group text-center">
+									<a class="text-primary" href="index.php">Go Home</a>
 								</div>
 							</form>
 							<!-- /Form -->

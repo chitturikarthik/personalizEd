@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO teacher_details (teacher_name, email, mobile) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $Fullname, $Email, $Mobile);
-    
+
     if ($stmt->execute()) {
         header("Location: t_login.php");
     } else {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close the statement
     $stmt->close();
 }
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <input name="mobile" id="mobile" class="form-control pass-input" type="text" required>
                                     <span class="profile-views feather-eye toggle-password"></span>
                                 </div>
-                                
+
                                 <div class=" dont-have">Already Registered? <a href="t_login.php">Login</a></div>
                                 <div class="form-group mb-0">
                                     <button class="btn btn-primary btn-block" type="submit">Register</button>

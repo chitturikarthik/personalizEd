@@ -33,6 +33,35 @@
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	<style>
+		.custom-video-container {
+			position: relative;
+		}
+
+		#custom-video {
+			width: 100%;
+		}
+
+		.custom-controls {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.custom-controls button,
+		.custom-controls input {
+			background: none;
+			border: none;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
 </head>
 
 <body>
@@ -58,26 +87,70 @@
 						<div class="blog-view">
 							<div class="blog-single-post">
 								<a href="s_dashboard.php" class="back-btn"><i class="feather-chevron-left"></i> Back</a>
-								<div class="blog-image">
-									<a href="javascript:void(0);">
-										<!-- <img alt="" src="assets/img/category/blog-detail.jpg" class="img-fluid"> -->
-										<video>
-											<source src="">
-										</video>
-									</a>
+								<div class="custom-video-container">
+									<video id="custom-video" src="content/Web Development/HTML Course _ World's most premium HTML Course _ Lecture 2.mp4" controls>
+										<!-- Your browser does not support the video tag. -->
+									</video>
+									<div id="watch-time" class="watch-time">00:00</div>
+									<script>
+										const video = document.getElementById('custom-video');
+										const watchTimeElement = document.getElementById('watch-time');
+
+										let startTime = 0;
+										let totalWatchTime = 0;
+										let isVideoPlaying = false;
+
+										video.addEventListener('play', () => {
+											startTime = Date.now() - totalWatchTime;
+											isVideoPlaying = true;
+											updateWatchTime();
+										});
+
+										video.addEventListener('pause', () => {
+											if (isVideoPlaying) {
+												totalWatchTime += (Date.now() - startTime);
+												isVideoPlaying = false;
+											}
+										});
+
+										video.addEventListener('seeked', () => {
+											if (isVideoPlaying) {
+												startTime = Date.now() - totalWatchTime;
+											}
+										});
+
+										function updateWatchTime() {
+											const elapsedMilliseconds = isVideoPlaying ? (Date.now() - startTime) : 0;
+											const elapsedSeconds = elapsedMilliseconds / 1000;
+											const playbackRate = video.playbackRate || 1; // Default to 1 if playbackRate is not available
+
+											const watchedDuration = elapsedSeconds / playbackRate;
+											const hours = Math.floor(watchedDuration / 3600);
+											const minutes = Math.floor((watchedDuration % 3600) / 60);
+											const seconds = Math.floor(watchedDuration % 60);
+
+											const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+											watchTimeElement.textContent = `Total Watch Time: ${formattedTime}`;
+
+											if (isVideoPlaying) {
+												requestAnimationFrame(updateWatchTime);
+											}
+										}
+									</script>
 								</div>
-								<h3 class="blog-title">Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
+								<h3 class="blog-title">HTML Course _ World's most premium HTML Course _ Lecture 2</h3>
 								<div class="blog-info">
 									<div class="post-list">
 										<ul>
 											<li>
 												<div class="post-author">
-													<a href="profile.html"><img src="assets/img/profiles/avatar-14.jpg" alt="Post Author"> <span>by Prof. Lester </span></a>
+													<a href="profile.html"><img src="assets/img/profiles/avatar-14.jpg" alt="Post Author"> <span>by Dr.Suresh Mudunuri </span></a>
 												</div>
 											</li>
 											<li><i class="feather-clock"></i> Dec 6, 2017</li>
 											<li><i class="feather-message-square"></i> 40 Comments</li>
-											<li><i class="feather-grid"></i> Set Theory, Mathematician</li>
+											<!-- <li><i class="feather-grid"></i> Set Theory, Mathematician</li> -->
 										</ul>
 									</div>
 								</div>
@@ -109,99 +182,6 @@
 							</div>
 							<!-- /About Author -->
 
-							<!-- Comments -->
-							<div class="card blog-comments">
-								<div class="card-header">
-									<h4 class="card-title">Comments (5)</h4>
-								</div>
-								<div class="card-body pb-0">
-									<ul class="comments-list">
-										<li>
-											<div class="comment">
-												<div class="comment-author">
-													<img class="avatar" alt="" src="assets/img/profiles/avatar-13.jpg">
-												</div>
-												<div class="comment-block">
-													<div class="comment-by">
-														<h5 class="blog-author-name">Michelle Fairfax <span class="blog-date"> <i class="feather-clock me-1"></i>Dec 6, 2017</span></h5>
-													</div>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-													<a class="comment-btn" href="#">
-														<i class="fa fa-reply me-2"></i> Reply
-													</a>
-												</div>
-											</div>
-											<ul class="comments-list reply">
-												<li>
-													<div class="comment">
-														<div class="comment-author">
-															<img class="avatar" alt="" src="assets/img/profiles/avatar-06.jpg">
-														</div>
-														<div class="comment-block">
-															<div class="comment-by">
-																<h5 class="blog-author-name">Gina Moore <span class="blog-date"> <i class="feather-clock me-1"></i> 6 Dec 2022</span></h5>
-															</div>
-															<p>gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur</p>
-															<a class="comment-btn" href="#">
-																<i class="fa fa-reply me-2"></i> Reply
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="comment">
-														<div class="comment-author">
-															<img class="avatar" alt="" src="assets/img/profiles/avatar-05.jpg">
-														</div>
-														<div class="comment-block">
-															<div class="comment-by">
-																<h5 class="blog-author-name">Carl Kelly <span class="blog-date"> <i class="feather-clock me-1"></i> 7 Dec 2022</span></h5>
-															</div>
-															<p> pellentesque urna varius vitae, gravida pellentesque urna consectetur adipiscing elit. Nam viverra euismod.</p>
-															<a class="comment-btn" href="#">
-																<i class="fa fa-reply me-2"></i> Reply
-															</a>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<div class="comment">
-												<div class="comment-author">
-													<img class="avatar" alt="" src="assets/img/profiles/avatar-09.jpg">
-												</div>
-												<div class="comment-block">
-													<div class="comment-by">
-														<h5 class="blog-author-name">Elsie Gilley <span class="blog-date"> <i class="feather-clock me-1"></i> 7 Dec 2022</span></h5>
-													</div>
-													<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-													<a class="comment-btn" href="#">
-														<i class="fa fa-reply me-2"></i> Reply
-													</a>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="comment">
-												<div class="comment-author">
-													<img class="avatar" alt="" src="assets/img/profiles/avatar-11.jpg">
-												</div>
-												<div class="comment-block">
-													<div class="comment-by">
-														<h5 class="blog-author-name">Joan Gardner <span class="blog-date"> <i class="feather-clock me-1"></i> 12 Dec 2022</span></h5>
-													</div>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-													<a class="comment-btn" href="#">
-														<i class="fa fa-reply me-2"></i> Reply
-													</a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- /Comments -->
 
 							<!-- Leave Comment -->
 							<div class="card new-comment clearfix">
@@ -255,7 +235,6 @@
 
 	</div>
 	<!-- /Main Wrapper -->
-
 	<!-- jQuery -->
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 

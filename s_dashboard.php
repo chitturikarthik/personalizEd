@@ -77,8 +77,9 @@ if (isset($_GET['logout'])) {
                 <div class="row">
                     <div class="col-md-9">
                         <ul class="list-links mb-4">
-                            <li class="active"><a href="blog.html">Active Blog</a></li>
-                            <li><a href="pending-blog.html">Pending Blog</a></li>
+                            <li class="active"><a href="blog.html">Beginner</a></li>
+                            <li><a href="pending-blog.html">Intermediate</a></li>
+                            <li><a href="pending-blog.html">Advanced</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 text-md-end">
@@ -131,7 +132,7 @@ if (isset($_GET['logout'])) {
                     <!-- /Blog Post -->
 
                     <!-- Blog Post -->
-                    
+
 
 
                 </div>

@@ -1,6 +1,5 @@
 <?php
 include 'connect.php';
-
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -9,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Mobile = $_POST["mobile"];
 
     // Insert data into the "users" table
-    $sql = "INSERT INTO student_details (teacher_name, email, mobile) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO student_details (student_name, email, mobile) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $Fullname, $Email, $Mobile);
 
@@ -72,22 +71,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <label>Full Name <span class="login-danger">*</span></label>
-                                    <input class="form-control" type="text">
+                                    <input name="fullname" class="form-control" type="text">
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Email <span class="login-danger">*</span></label>
-                                    <input class="form-control" type="text">
+                                    <input name="email" class="form-control" type="text">
                                     <span class="profile-views"><i class="fas fa-envelope"></i></span>
                                 </div>
                                 <div class="form-group">
                                     <label>Mobile <span class="login-danger">*</span></label>
-                                    <input class="form-control pass-input" type="text">
+                                    <input name="mobile" class="form-control pass-input" type="text">
                                     <span class="profile-views feather-eye toggle-password"></span>
                                 </div>
                                 <div class=" dont-have">Already Registered? <a href="s_login.php">Login</a></div>
                                 <div class="form-group mb-0">
-                                    <button class="btn btn-primary btn-block" type="submit">Register</button>
+                                    <button class="btn btn-primary btn-block" type="submit" name="accesscheck">Register</button>
                                 </div>
                             </form>
                             <!-- /Form -->

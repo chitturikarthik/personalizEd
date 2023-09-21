@@ -1,17 +1,18 @@
 <?php
 include 'connect.php';
-
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $Fullname = $_POST["fullname"];
-    $Email = $_POST["email"]; // Use "email" here to match the form field name
+    $Email = $_POST["email"];
     $Mobile = $_POST["mobile"];
+    $Dateofbirth = $_POST['dateofbirth'];
+    $Address = $_POST['address'];
 
-    // Insert data into the "users" table
-    $sql = "INSERT INTO teacher_details (teacher_name, email, mobile) VALUES (?, ?, ?)";
+    // Insert data into the "student_details" table
+    $sql = "INSERT INTO teacher_details (teacher_name, email, mobile, date_of_birth, address) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $Fullname, $Email, $Mobile);
+    $stmt->bind_param("sssss", $Fullname, $Email, $Mobile, $Dateofbirth, $Address);
 
     if ($stmt->execute()) {
         header("Location: t_login.php");
@@ -22,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close the statement
     $stmt->close();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -83,6 +85,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <label>Mobile <span class="login-danger">*</span></label>
                                     <input name="mobile" id="mobile" class="form-control pass-input" type="text" required>
                                     <span class="profile-views feather-eye toggle-password"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Date of Birth <span class="login-danger">*</span></label>
+
+                                    <input required name="dateofbirth" class="form-control" type="date">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Address <span class="login-danger">*</span></label>
+                                    
+                                    
+                                    <textarea name='address' class="form-control" id="addressTextarea" placeholder="Street: , Area: , City: , Pincode: , State:"></textarea>
                                 </div>
 
                                 <div class=" dont-have">Already Registered? <a href="t_login.php">Login</a></div>

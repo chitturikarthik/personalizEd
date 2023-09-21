@@ -45,7 +45,7 @@ session_start();
 					<div class="login-right">
 						<div class="login-right-wrap">
 							<h1>Welcome to PersonalizEd</h1>
-							<p class="account-subtitle">Need an account? <a href="s_register.php">Register</a></p>
+							<p class="account-subtitle">Need an account? <a href="t_register.php">Register</a></p>
 							<h2>Teacher Log in</h2>
 							<!-- Form -->
 							<form method="post" action="teacher_access_check.php">

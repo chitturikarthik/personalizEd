@@ -6,7 +6,7 @@ if (isset($_POST['accesscheck'])) {
   $mobile = $_POST['pwd'];
   echo $mobile;
   echo $email;
-  include 'connect.php';
+  include 'connect.php'; 
 
   $stmt = $conn->prepare("SELECT * FROM teacher_details WHERE email = ? AND mobile = ?");
   $stmt->bind_param("ss", $email, $mobile);

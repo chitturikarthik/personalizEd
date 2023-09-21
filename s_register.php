@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <p class="account-subtitle">Enter details to create your account</p>
 
                             <!-- Form -->
-                            <form action="login.html">
+                            <form action="#" method="post">
                                 <div class="form-group">
                                     <label>Full Name <span class="login-danger">*</span></label>
                                     <input class="form-control" type="text">

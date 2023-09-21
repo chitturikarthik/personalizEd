@@ -72,6 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <div class="form-group">
                                     <label>Full Name <span class="login-danger">*</span></label>
                                     <input required autocapitalize="on" name="fullname" class="form-control" type="text">
+                                    <input required name="fullname" class="form-control" type="text">
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <div class="form-group">

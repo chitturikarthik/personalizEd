@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-if (isset($_POST['accesscheck'])) {
+if (isset($_POST['teachercheck'])) {
   $email = $_POST['email'];
   $mobile = $_POST['pwd'];
   echo $mobile;
   echo $email;
-  include 'connect.php'; 
+  include 'connect.php';
 
   $stmt = $conn->prepare("SELECT * FROM teacher_details WHERE email = ? AND mobile = ?");
   $stmt->bind_param("ss", $email, $mobile);
@@ -15,10 +15,10 @@ if (isset($_POST['accesscheck'])) {
 
   if ($result) {
     // Valid credentials, set the session and redirect to student_dashboard.php
-    $_SESSION["access"] = "personalized";
-    $_SESSION["user-id"] = $email;
+    $_SESSION["teacher_access"] = "personalized";
+    $_SESSION["teacher-id"] = $email;
     header("Location: t_dashboard.php");
-    exit(); 
+    exit();
   } else {
     // Invalid credentials, redirect to index.php
     header("Location: index.php");

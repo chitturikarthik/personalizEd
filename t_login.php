@@ -7,7 +7,7 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<title>Teacher Login</title>
+	<title>Student Login</title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="assets/img/favicon.png">
@@ -40,12 +40,12 @@ session_start();
 			<div class="container">
 				<div class="loginbox">
 					<div class="login-left">
-						<img class="img-fluid" src="assets/img/login.png" alt="Logo">
+						<img class="img-fluid" src="assets/img/teacher_login.png" alt="Logo">
 					</div>
 					<div class="login-right">
 						<div class="login-right-wrap">
 							<h1>Welcome to PersonalizEd</h1>
-							<p class="account-subtitle">Need an account? <a href="t_register.php">Register</a></p>
+							<p class="account-subtitle">Need an account? <a href="s_register.php">Register</a></p>
 							<h2>Teacher Log in</h2>
 							<!-- Form -->
 							<form method="post" action="teacher_access_check.php">
@@ -56,14 +56,13 @@ session_start();
 								</div>
 								<div class="form-group">
 									<label>Password <span class="login-danger">*</span></label>
-									<input class="form-control pass-input" type="number" name="pwd" id="pwd" reequired>
+									<input class="form-control pass-input" type="number" name="pwd" id="pwd" required>
 									<span class="profile-views feather-eye toggle-password"></span>
 								</div>
 
 								<div class="form-group">
-									<button class="btn btn-primary btn-block" type="submit" name="accesscheck">Login</button>
+									<button class="btn btn-primary btn-block" type="submit" name="teachercheck">Login</button>
 								</div>
-
 								<div class="login-or">
 									<span class="or-line"></span>
 									<span class="span-or">or</span>

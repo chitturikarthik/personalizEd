@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="container">
                 <div class="loginbox">
                     <div class="login-left">
-                        <img class="img-fluid" src="assets/img/login.png" alt="Logo">
+                        <img class="img-fluid" src="assets/img/teacher_login.png" alt="Logo">
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
@@ -90,15 +90,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <div class="form-group">
                                     <label>Date of Birth <span class="login-danger">*</span></label>
 
-                                    <input required name="dateofbirth" class="form-control" type="date">
+                                    <input required name="dateofbirth" class="form-control" type="date" required>
 
                                 </div>
 
                                 <div class="form-group">
                                     <label>Address <span class="login-danger">*</span></label>
-                                    
-                                    
-                                    <textarea name='address' class="form-control" id="addressTextarea" placeholder="Street: , Area: , City: , Pincode: , State:"></textarea>
+
+
+                                    <textarea name='address' class="form-control" id="addressTextarea" placeholder="Street: , Area: , City: , Pincode: , State:" required></textarea>
                                 </div>
 
                                 <div class=" dont-have">Already Registered? <a href="t_login.php">Login</a></div>

@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <label>Full Name <span class="login-danger">*</span></label>
-                                    <input name="fullname" id="fullname" class="form-control" type="text" required>
+                                    <input name="fullname" id="fullname" class="form-control" type="text" required autocapitalize>
                                     <span class="profile-views"><i class="fas fa-user-circle"></i></span>
                                 </div>
                                 <div class="form-group">

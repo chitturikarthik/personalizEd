@@ -57,7 +57,7 @@
 
 		<div role="main" class="main">
 
-			<section class="section section-primary section-no-border my-0" style="background-image: url(img/generic/generic-corporate-17-13.png); background-size: cover; background-position: center;">
+			<section class="section section-primary section-no-border my-0" style="background-image: url(img/wallpaper.jpeg); background-size: cover; background-position: center;">
 				<div class="container mb-5 pb-5">
 					<div class="row justify-content-center">
 						<div class="col">
@@ -110,7 +110,7 @@
 									<p>Analysis of Learning Intelligence <BR> Answer a few question to let us know your type of learning intelligence.</p>
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.png); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/li.jpeg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
 									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
@@ -131,7 +131,7 @@
 
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-14.png); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/content.jpeg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
 									<p class="font-weight-light text-color-light opacity-5">hv gchghsnjafguysa</p>
@@ -151,7 +151,7 @@
 									<p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-12.png); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/rating.png); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
 									<p class="font-weight-light text-color-light opacity-5">a</p>
@@ -184,7 +184,7 @@
 					</div>
 					
 					<div class="col-md-6 col-lg-4 px-5 px-md-3">
-						<img width="500" height="400" src="img/generic/concept-logo.jpg" alt="" />
+						<img width="500" height="400" src="img/flow-chart.jpeg" alt="" />
 					</div>
 
 				</div>
@@ -197,7 +197,7 @@
 					<div class="col-lg-4 ps-lg-0 pe-lg-2 mb-3 appear-animation" data-appear-animation="fadeInRightShorter">
 						<span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
 							<span class="thumb-info-wrapper overlay overlay-show overlay-op-8">
-								<img src="img/gallery/development.png" class="img-fluid" alt="">
+								<img src="img/web.jpeg" class="img-fluid" alt="">
 								<span class="thumb-info-title bg-transparent mb-4 ps-4 ms-2">
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8"></span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">Web Development</span>
@@ -212,7 +212,7 @@
 					<div class="col-lg-4 px-lg-1 mb-3 appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="600">
 						<span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
 							<span class="thumb-info-wrapper overlay overlay-show overlay-op-8">
-								<img src="img/gallery/c-logo.png" class="img-fluid" alt="">
+								<img src="img/c.png" class="img-fluid" alt="">
 								<span class="thumb-info-title bg-transparent mb-4 ps-4 ms-2">
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8"></span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">C Programming</span>
@@ -226,7 +226,7 @@
 					<div class="col-lg-4 pe-lg-0 ps-lg-2 mb-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
 						<span class="thumb-info thumb-info-no-borders thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-show-more thumb-info-no-zoom">
 							<span class="thumb-info-wrapper overlay overlay-show overlay-op-8">
-								<img src="img/gallery/java.png" class="img-fluid" alt="">
+								<img src="img/java.jpeg" class="img-fluid" alt="">
 								<span class="thumb-info-title bg-transparent mb-4 ps-4 ms-2">
 									<span class="thumb-info-type font-weight-light text-1 line-height-1 opacity-8"></span>
 									<span class="thumb-info-inner font-weight-bold text-4 line-height-4">Java</span>
@@ -299,7 +299,7 @@
 					</div> -->
 
 					<div class="col-md-5 col-lg-4 px-5 px-md-3">
-						<img class="img-fluid" src="img/generic/generic-corporate-17-15.png" alt="" />
+						<img class="img-fluid" src="img/quote.jpeg" alt="" />
 					</div>
 
 

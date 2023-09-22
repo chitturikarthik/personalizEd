@@ -14,14 +14,14 @@
                         <!-- <li><a href="">Content Edit</a></li> -->
                     </ul>
                 </li>
-                <li class="submenu">
+                <!-- <li class="submenu">
                     <a href="#" class="subdrop"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span class="menu-arrow"></span></a>
                     <ul style="display: block;">
                         <li><a href="">Subject List</a></li>
                         <li><a href="">Subject Add</a></li>
                         <li><a href="">Subject Edit</a></li>
                     </ul>
-                </li>
+                </li> -->
 
             </ul>
             </li>

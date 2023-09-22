@@ -1,32 +1,16 @@
-<?php session_start();
+<?php
+session_start();
 include 'connect.php';
-
-if (!isset($_SESSION['access'])) {
-    header("Location:index.php");
-    exit();
-}
-// Logout logic
-if (isset($_GET['logout'])) {
-    // Clear all session variables
-    $_SESSION = array();
-
-    // Destroy the session
-    session_destroy();
-
-    // Redirect to the login page
-    header("Location: s_login.php");
-    exit();
-}
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Student Dashboard</title>
+    <title>Student Dashborad</title>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
@@ -42,12 +26,6 @@ if (isset($_GET['logout'])) {
     <!-- Pe7 CSS -->
     <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
 
-    <!-- Select CSS  -->
-    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
-
-    <!-- Feathericon CSS -->
-    <link rel="stylesheet" href="assets/css/feather.css">
-
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
@@ -57,75 +35,131 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
         <!-- Header -->
-        <?php include 's_dash_topbar.php' ?>
+        <?php include 's_dash_topbar.php'; ?>
         <!-- /Header -->
 
         <!-- Sidebar -->
-        <?php include 's_dash_sidebar.php' ?>
+        <?php include 's_dash_sidebar.php'; ?>
         <!-- /Sidebar -->
 
         <!-- Page Wrapper -->
         <div class="page-wrapper">
             <div class="content container-fluid">
 
-                <!-- Blog List -->
-                <div class="row">
-                    <div class="col-md-9">
-                        <ul class="list-links mb-4">
-                            <li class="active"><a href="blog.html">Beginner</a></li>
-                            <li><a href="pending-blog.html">Intermediate</a></li>
-                            <li><a href="pending-blog.html">Advanced</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="page-title">Your Contents</h3>
 
-                <div class="row">
-
-                    <!-- Blog Post -->
-                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
-                        <div class="blog grid-blog flex-fill">
-                            <div class="blog-image">
-                                <a href="topic_content.php"><img class="img-fluid" src="assets/img/category/blog-6.jpg" alt="Post Image"></a>
-                                <div class="blog-views">
-                                    <i class="feather-eye me-1"></i> 225
-                                </div>
-
-                            </div>
-                            <div class="blog-content">
-                                <ul class="entry-meta meta-item">
-                                    <li>
-                                        <div class="post-author">
-                                            <a href="profile.html">
-                                                <img class="img rounded-circle" src="assets/img/profiles/avatar-01.jpg" alt="Post Author">
-                                                <span>
-                                                    <span class="post-title">Teacher Name</span>
-
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <h3 class="blog-title"><a href="blog-details.html">Video Title </a><span class="post-date"><i class="far fa-clock"></i> Uploaded Date</span></h3>
-                                <p>About Video</p>
-                            </div>
-                            <!-- <div class="row">
-                                <div class="edit-options">
-                                    <div class="edit-delete-btn">
-                                        <a href="edit-blog.html" class="text-success"><i class="feather-edit-3 me-1"></i> Edit</a>
-                                        <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="feather-trash-2 me-1"></i> Delete</a>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
-
-
                 </div>
+                <!-- /Page Header -->
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="profile-menu">
+                            <ul class="nav nav-tabs nav-tabs-solid">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#beginner_tab">HTML</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#intermediate_tab">CSS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#advanced_tab">JAVASCRIPT</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content profile-tab-cont">
+
+                            <!-- Personal Details Tab -->
+                            <div class="tab-pane fade show active" id="beginner_tab">
+
+                                <!-- Personal Details -->
+                                <div class="row">
+
+
+                                    <div class="col-lg-5">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-10 col-lg-12">
+                                                        <div class="blog grid-blog flex-fill">
+                                                            <div class="blog-image">
+                                                                <a href=""><img class="img-fluid" src="assets/html_begin/1.png" alt="Post Image"></a>
+                                                                <div class="blog-views">
+                                                                    <i class="feather-eye me-1"></i> 225
+                                                                </div>
+                                                            </div>
+                                                            <div class="blog-content">
+                                                                <ul class="entry-meta meta-item">
+                                                                    <li>
+                                                                        <div class="post-author">
+                                                                            <a href="profile.html">
+                                                                                <img src="img/login-user.jpg" alt="Post Author">
+                                                                                <span>
+                                                                                    <span class="post-title">Vincent</span>
+                                                                                    <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <h3 class="blog-title"><a href="blog-details.html">Learning is an objective, Lorem Ipsum is not </a></h3>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Personal Details Tab -->
+
+                            <!-- Change Password Tab -->
+                            <div id="intermediate_tab" class="tab-pane fade">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- <h5 class="card-title">Intermediate</h5> -->
+                                        <div class="row">
+                                            <div class="col-md-10 col-lg-6">
+                                                <h3>INTEMEDIATE CONTENTS WILL BE DISPLAYED HERE</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Change Password Tab -->
+
+                            <div id="advanced_tab" class="tab-pane fade">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <!-- <h5 class="card-title">Advanced</h5> -->
+                                        <div class="row">
+                                            <div class="col-md-10 col-lg-6">
+                                                <h3>ADVANCED CONTENTS WILL BE DISPLAYED HERE</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- /Page Wrapper -->
@@ -144,12 +178,6 @@ if (isset($_GET['logout'])) {
 
     <!-- Slimscroll JS -->
     <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-    <!-- Select JS-->
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
-
-    <!-- Feathericon js -->
-    <script src="assets/js/feather.min.js"></script>
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>

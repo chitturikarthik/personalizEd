@@ -1,5 +1,7 @@
 <?php
-session_start();
+// session_start();
+$teacher_id = $_GET['mail'];
+// echo $teacher_id;
 ?>
 
 <!DOCTYPE html>
@@ -74,8 +76,9 @@ session_start();
 						<div class="card">
 							<div class="card-body">
 								<div class="bank-inner-details">
-									<form method="post" action="submit_content.php" enctype="multipart/form-data">
+									<form action="upload.php" method="POST" enctype="multipart/form-data">
 										<div class="row">
+											<input name="teacher_id" hidden value="<?php echo $teacher_id ?>">
 											<div class="col-lg-12 col-md-12">
 												<div class="form-group">
 													<label>Title<span class="text-danger">*</span></label>
@@ -84,19 +87,14 @@ session_start();
 											</div>
 											<div class="col-lg-12 col-md-12">
 												<div class="form-group">
-													<label>Content Image(Thumbnail)</label>
-													<div class="change-photo-btn">
-														<div>
-															<p>Add Image</p>
-														</div>
-														<input name="c_image" id="c_image" type="file" class="upload">
-													</div>
+													<label>Upload Video<span class="text-danger">*</span></label>
+													<input class="form-control" type="file" name="video" accept="video/* , .png, .pdf , .docx, .doc" required>
 												</div>
 											</div>
 											<div class="col-lg-12 col-md-12">
 												<div class="form-group">
 													<label>Description</label>
-													<input name="editor" id="editor"></input>
+													<textarea class="form-control" name="description" rows="4" cols="50" required></textarea>
 												</div>
 											</div>
 											<div class="row">

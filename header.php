@@ -6,11 +6,7 @@
 				<div class="header-row">
 					<div class="header-logo">
 						<a href="index.html">
-<<<<<<< HEAD
-							<img alt="Porto" width="250" height="80" data-sticky-width="180" data-sticky-height="60" src="assets/img/site_logo.png">
-=======
-							<img alt="Porto" width="250" height="80" data-sticky-width="180" data-sticky-height="60" >
->>>>>>> 4aa69a35242a129ba0ad5c6d358de232e1edc9a1
+							<img alt="Porto" width="250" height="80" data-sticky-width="180" data-sticky-height="60" src="img/site_logo.png">
 						</a>
 					</div>
 				</div>

@@ -100,7 +100,7 @@ $teacher_id = $_GET['teacherMail'];
 												<div class="col-lg-3 col-md-12">
 													<div class="form-group">
 														<label>Content Type</label>
-														<select name="c_type" id="c_type" class="form-control">
+														<select required name="c_type" id="c_type" class="form-control">
 															<option>Select Content Type</option>
 															<option value="pdf">PDF</option>
 															<option value="video">VIDEO</option>
@@ -112,7 +112,7 @@ $teacher_id = $_GET['teacherMail'];
 												<div class="col-lg-3 col-md-12">
 													<div class="form-group">
 														<label>Subject</label>
-														<select name="subject" id="subject" class="form-control">
+														<select required name="subject" id="subject" class="form-control">
 															<option>Select Subject</option>
 															<option value="C">C Language</option>
 															<option value="Web Technologies">Web Technologies</option>
@@ -123,7 +123,7 @@ $teacher_id = $_GET['teacherMail'];
 												<div class="col-lg-3 col-md-12">
 													<div class="form-group">
 														<label>Difficulty Level</label>
-														<select name="diff_level" id="diff_level" class="form-control">
+														<select required name="diff_level" id="diff_level" class="form-control">
 															<option value="">Select Difficulty Level</option>
 															<option value="0">Basic</option>
 															<option value="1">Intermediate</option>
@@ -134,7 +134,7 @@ $teacher_id = $_GET['teacherMail'];
 												<div class="col-lg-3 col-md-12">
 													<div class="form-group">
 														<label>Intelligence Type</label>
-														<select name="li_type" id="li_type" class="form-control">
+														<select required name="li_type" id="li_type" class="form-control">
 															<option value="">Select Intelligence Type</option>
 															<option value="visual">Visual Smart</option>
 															<option value="verbal">Verbal Smart</option>

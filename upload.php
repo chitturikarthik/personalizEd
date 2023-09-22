@@ -8,15 +8,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = "root";
     $password = "";
     $dbname = "personalized";
-
     // Create a connection
     $conn = new mysqli($servername, $username, $password, $dbname);
-
     // Check the connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-
     // Retrieve form data
     $teacher_id = $_POST['teacher_id'];
     $c_title = $_POST["c_title"];
@@ -37,9 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Insert data into the database
             $sql = "INSERT INTO contents (teacher_id , c_title, c_about, content_type, subject, difficulty_level, learning_intelligence, video_path) 
                     VALUES ('$teacher_id','$c_title', '$description', '$c_type', '$subject', '$diff_level', '$li_type', '$video_path')";
-
             if ($conn->query($sql) === TRUE) {
-                // echo "Content uploaded successfully.";
                 echo " 
                 <script>
                 alert('Content Uploaded Successfully');

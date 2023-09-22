@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="container">
                 <div class="loginbox">
                     <div class="login-left">
-                        <img class="img-fluid" src="assets/img/teacher_login.png" alt="Logo">
+                        <img class="img-fluid" src="img/login/2.png" alt="Logo">
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
@@ -96,9 +96,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                 <div class="form-group">
                                     <label>Address <span class="login-danger">*</span></label>
-
-
                                     <textarea name='address' class="form-control" id="addressTextarea" placeholder="Street: , Area: , City: , Pincode: , State:" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="file" >
                                 </div>
 
                                 <div class=" dont-have">Already Registered? <a href="t_login.php">Login</a></div>

@@ -2,11 +2,11 @@
 // session_start();
 // $teacher_id = $_GET['teacherMail'];
 
-	if (!isset($_GET['teacherMail'])) {
-		header("Location:index.php");
-		exit();
-	} else {
-		$teacher_id = $_GET['teacherMail'];
+if (!isset($_GET['teacherMail'])) {
+	header("Location:index.php");
+	exit();
+} else {
+	$teacher_id = $_GET['teacherMail'];
 }
 ?>
 
@@ -29,23 +29,17 @@
 
 	<!-- Feathericon CSS -->
 	<link rel="stylesheet" href="assets/plugins/feather/feather.css">
-
 	<!-- Pe7 CSS -->
 	<link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
-
 	<!-- Select CSS  -->
 	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
-
 	<!-- Feathericon CSS -->
 	<link rel="stylesheet" href="assets/css/feather.css">
-
 	<!-- Ckeditor CSS-->
 	<link rel="stylesheet" href="assets/css/ckeditor.css">
-
 	<!-- Fontawesome CSS -->
 	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -60,7 +54,6 @@
 		<!-- Header -->
 		<?php include 't_dash_topbar.php' ?>
 		<!-- /Header -->
-
 		<!-- Sidebar -->
 		<?php include 't_dash_sidebar.php' ?>
 		<!-- /Sidebar -->

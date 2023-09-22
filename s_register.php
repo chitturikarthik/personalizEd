@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="container">
                 <div class="loginbox">
                     <div class="login-left">
-                        <img class="img-fluid" src="assets/img/student_login.png" alt="Logo">
+                        <img class="img-fluid" src="img/login/1.png" alt="Logo">
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">

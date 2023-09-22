@@ -33,10 +33,10 @@ if (isset($_GET['logout'])) {
     <!-- Logo -->
     <div class="header-left">
         <a href="" class="logo">
-            <img src="./img/logo-default-slim.png" alt="Logo" width="250" height="70">
+            <img src="assets/img/site_logo.png" alt="Logo" width="250" height="70">
         </a>
         <a href="" class="logo logo-small">
-            <img src="./img/logo-default-slim.png" alt="Logo" width="30" height="30">
+            <img src="assets/img/site_logo.png" alt="Logo" width="30" height="30">
         </a>
     </div>
     <!-- /Logo -->

@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row justify-content-md-center py-4 mt-3">
             <div class="col-md-12 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-                <a href="index.html"><img src="img/logo-default-slim.png" alt="Logo" class="img-fluid" style="max-width: 3000px;"></a>
+                <a href="index.html"><img src="assets/img/site_logo.png" alt="Logo" class="img-fluid" style="max-width: 3000px;"></a>
             </div>
             <div class="col-md-8 col-lg-5">
                 <h5 class="text-3 mb-3">Important Links</h5>

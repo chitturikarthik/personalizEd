@@ -153,7 +153,7 @@ session_start();
 							</div>
 							<div class=" blog-categories-btn pt-0">
 								<div class="bank-details-btn ">
-									<a type="submit" name="submit" class="btn bank-cancel-btn me-2">Post Content</a>
+									<button type="submit" name="submit" class="btn bank-cancel-btn me-2">Post Content</button>
 								</div>
 							</div>
 							</form>

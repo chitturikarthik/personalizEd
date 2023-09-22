@@ -6,7 +6,7 @@ if (!isset($_GET['teacherMail'])) {
 	header("Location:index.php");
 	exit();
 } else {
-	$teacher_id = $_GET['teacherMail'];
+$teacher_id = $_GET['teacherMail'];
 }
 ?>
 

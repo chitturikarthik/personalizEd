@@ -1,6 +1,9 @@
-<?php
-session_start();
-?>
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +43,8 @@ session_start();
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	
 </head>
 
 <body>
@@ -151,6 +156,10 @@ session_start();
 
 								</div>
 							</div>
+							<form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="mp4_file" accept=".mp4" required>
+        <input type="submit" value="Upload">
+    </form>
 							<div class=" blog-categories-btn pt-0">
 								<div class="bank-details-btn ">
 									<button type="submit" name="submit" class="btn bank-cancel-btn me-2">Post Content</button>

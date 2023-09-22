@@ -1,7 +1,13 @@
 <?php
 // session_start();
-$teacher_id = $_GET['mail'];
-// echo $teacher_id;
+// $teacher_id = $_GET['teacherMail'];
+
+	if (!isset($_GET['teacherMail'])) {
+		header("Location:index.php");
+		exit();
+	} else {
+		$teacher_id = $_GET['teacherMail'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +48,8 @@ $teacher_id = $_GET['mail'];
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 
 <body>
@@ -67,7 +75,7 @@ $teacher_id = $_GET['mail'];
 						<div class="page-header">
 							<div class="row">
 								<div class="col-sm-12">
-									<h3 class="page-title">Add Content</h3>
+									<h3 class="page-title">Add Content<?php echo $teacher_id ?></h3>
 								</div>
 							</div>
 						</div>
@@ -149,6 +157,10 @@ $teacher_id = $_GET['mail'];
 
 								</div>
 							</div>
+							<form action="upload.php" method="post" enctype="multipart/form-data">
+								<input type="file" name="mp4_file" accept=".mp4" required>
+								<input type="submit" value="Upload">
+							</form>
 							<div class=" blog-categories-btn pt-0">
 								<div class="bank-details-btn ">
 									<button type="submit" name="submit" class="btn bank-cancel-btn me-2">Post Content</button>

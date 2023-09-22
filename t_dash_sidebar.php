@@ -4,13 +4,14 @@
             <ul>
                 <li class="menu-title">
                     <span>DASHBOARD</span>
+                    <a href="t_dashboard.php"></a>
                 </li>
                 <li class="submenu">
-                    <a href="#" class="subdrop"><i class="fas fa-clipboard"></i> <span> Content</span> <span class="menu-arrow"></span></a>
+                    <a href="t_dashboard.php" class="subdrop"><i class="fas fa-clipboard"></i> <span> Content</span> <span class="menu-arrow"></span></a>
                     <ul style="display: block;">
-                        <li><a href="">Contents List</a></li>
+                        <!-- <li><a href="t_dashborad.php">Contents List</a></li> -->
                         <li><a href="add-content.php">Content Add</a></li>
-                        <li><a href="">Content Edit</a></li>
+                        <!-- <li><a href="">Content Edit</a></li> -->
                     </ul>
                 </li>
                 <li class="submenu">

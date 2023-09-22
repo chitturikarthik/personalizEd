@@ -1,6 +1,16 @@
 <?php
 session_start();
 include 'connect.php';
+$query = "SELECT * FROM teacher_details"; // Corrected the column name to "username"
+$result1 = mysqli_query($conn, $query);
+
+if ($result1) {
+    $row = mysqli_fetch_row($result1);
+    $teacher_name = $row[1];
+} else {
+    // Handle the query error here
+    echo "Error: " . mysqli_error($conn);
+}
 
 ?>
 <!DOCTYPE html>
@@ -94,15 +104,12 @@ include 'connect.php';
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-sub-header">
-                                <h3 class="page-title">Welcome Admin!</h3>
+                                <h3 class="page-title">Welcome <?php echo $teacher_name; ?> !</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /Page Header -->
-
-
-
                 <!-- /Page Wrapper -->
             </div>
             <!-- /Main Wrapper -->

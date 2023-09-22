@@ -1,5 +1,5 @@
 <?php
-$teacher_id = $_GET['teacherMail'];
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -58,9 +58,11 @@ $teacher_id = $_GET['teacherMail'];
 
 						<!-- Page Header -->
 						<div class="page-header">
+							<a href="t_dashboard.php">Back</a>
+
 							<div class="row">
 								<div class="col-sm-12">
-									<h3 class="page-title">Add Content<?php echo $teacher_id ?></h3>
+									<h3 class="page-title">Add Content</h3>
 								</div>
 							</div>
 						</div>

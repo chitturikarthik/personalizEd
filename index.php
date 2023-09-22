@@ -113,7 +113,7 @@
 							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/li.jpeg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing .</p>
+									<p class="font-weight-light text-color-light opacity-5"></p>
 									<a href="#" class="btn btn-dark btn-modern text-color-light font-weight-bold">Take assessment</a>
 								</div>
 							</div>
@@ -151,10 +151,10 @@
 									<p>Together, we're building a space where your voice is heard, and your insights make a difference</p>
 								</div>
 							</div>
-							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/rating.png); background-size: cover; background-position: center;">
+							<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/rating.jpeg); background-size: cover; background-position: center;">
 								<div class="flip-content my-4">
 									<h4 class="font-weight-bold text-color-light"></h4>
-									<p class="font-weight-light text-color-light opacity-5">a</p>
+									<p class="font-weight-light text-color-light opacity-5"></p>
 									<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">Rating</a>
 								</div>
 								<a name="concept" ></a>

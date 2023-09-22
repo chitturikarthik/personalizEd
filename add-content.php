@@ -65,7 +65,7 @@ session_start();
 						<div class="page-header">
 							<div class="row">
 								<div class="col-sm-12">
-									<h3 class="page-title">Add Post</h3>
+									<h3 class="page-title">Add Content</h3>
 								</div>
 							</div>
 						</div>
@@ -74,38 +74,89 @@ session_start();
 						<div class="card">
 							<div class="card-body">
 								<div class="bank-inner-details">
-									<div class="row">
-										<div class="col-lg-12 col-md-12">
-											<div class="form-group">
-												<label>Title<span class="text-danger">*</span></label>
-												<input type="text" class="form-control">
+									<form method="post" action="submit_content.php" enctype="multipart/form-data">
+										<div class="row">
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Title<span class="text-danger">*</span></label>
+													<input name="c_title" id="c_title" type="text" class="form-control">
+												</div>
 											</div>
-										</div>
-										<div class="col-lg-12 col-md-12">
-											<div class="form-group">
-												<label>Blog Image</label>
-												<div class="change-photo-btn">
-													<div>
-														<p>Add Image</p>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Content Image(Thumbnail)</label>
+													<div class="change-photo-btn">
+														<div>
+															<p>Add Image</p>
+														</div>
+														<input name="c_image" id="c_image" type="file" class="upload">
 													</div>
-													<input type="file" class="upload">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Description</label>
+													<input name="editor" id="editor"></input>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-lg-3 col-md-12">
+													<div class="form-group">
+														<label>Content Type</label>
+														<select name="c_type" id="c_type" class="form-control">
+															<option>Select Content Type</option>
+															<option value="pdf">PDF</option>
+															<option value="video">VIDEO</option>
+															<option value="ppt">PPT</option>
+															<option value="docx">DOCX</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-12">
+													<div class="form-group">
+														<label>Subject</label>
+														<select name="subject" id="subject" class="form-control">
+															<option>Select Subject</option>
+															<option value="C">C Language</option>
+															<option value="Web Technologies">Web Technologies</option>
+															<option value="Python">Python</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-12">
+													<div class="form-group">
+														<label>Difficulty Level</label>
+														<select name="diff_level" id="diff_level" class="form-control">
+															<option value="">Select Difficulty Level</option>
+															<option value="0">Basic</option>
+															<option value="1">Intermediate</option>
+															<option value="2">Expert</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-lg-3 col-md-12">
+													<div class="form-group">
+														<label>Intelligence Type</label>
+														<select name="li_type" id="li_type" class="form-control">
+															<option value="">Select Intelligence Type</option>
+															<option value="visual">Visual Smart</option>
+															<option value="verbal">Verbal Smart</option>
+															<option value="logical">Logical Smart</option>
+															<option value="existential">Real world smart</option>
+														</select>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-12 col-md-12">
-											<div class="form-group">
-												<label>Description</label>
-												<div id="editor"></div>
-											</div>
-										</div>
-									</div>
+
 								</div>
 							</div>
 							<div class=" blog-categories-btn pt-0">
 								<div class="bank-details-btn ">
-									<a href="blog.html" class="btn bank-cancel-btn me-2">Add Post</a>
+									<a type="submit" name="submit" class="btn bank-cancel-btn me-2">Post Content</a>
 								</div>
 							</div>
+							</form>
 						</div>
 					</div>
 				</div>

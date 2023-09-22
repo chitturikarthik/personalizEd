@@ -101,97 +101,30 @@ include 'connect.php';
                 </div>
                 <!-- /Page Header -->
 
-                <!-- Overview Section -->
-                <div class="row">
-                    <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                        <div class="card bg-comman w-100">
-                            <div class="card-body">
-                                <div class="db-widgets d-flex justify-content-between align-items-center">
-                                    <div class="db-info">
-                                        <h6>Students</h6>
-                                        <h3>50055</h3>
-                                    </div>
-                                    <div class="db-icon">
-                                        <img src="assets/img/icons/dash-icon-01.svg" alt="Dashboard Icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                        <div class="card bg-comman w-100">
-                            <div class="card-body">
-                                <div class="db-widgets d-flex justify-content-between align-items-center">
-                                    <div class="db-info">
-                                        <h6>Awards</h6>
-                                        <h3>50+</h3>
-                                    </div>
-                                    <div class="db-icon">
-                                        <img src="assets/img/icons/dash-icon-02.svg" alt="Dashboard Icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                        <div class="card bg-comman w-100">
-                            <div class="card-body">
-                                <div class="db-widgets d-flex justify-content-between align-items-center">
-                                    <div class="db-info">
-                                        <h6>Department</h6>
-                                        <h3>30+</h3>
-                                    </div>
-                                    <div class="db-icon">
-                                        <img src="assets/img/icons/dash-icon-03.svg" alt="Dashboard Icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-sm-6 col-12 d-flex">
-                        <div class="card bg-comman w-100">
-                            <div class="card-body">
-                                <div class="db-widgets d-flex justify-content-between align-items-center">
-                                    <div class="db-info">
-                                        <h6>Revenue</h6>
-                                        <h3>$505</h3>
-                                    </div>
-                                    <div class="db-icon">
-                                        <img src="assets/img/icons/dash-icon-04.svg" alt="Dashboard Icon">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- /Page Wrapper -->
             </div>
-        </div>
-        <!-- /Page Wrapper -->
-    </div>
-    <!-- /Main Wrapper -->
+            <!-- /Main Wrapper -->
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+            <!-- jQuery -->
+            <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-    <!-- Bootstrap Core JS -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap Core JS -->
+            <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Feather Icon JS -->
-    <script src="assets/js/feather.min.js"></script>
+            <!-- Feather Icon JS -->
+            <script src="assets/js/feather.min.js"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+            <!-- Slimscroll JS -->
+            <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Chart JS -->
-    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
-    <script src="assets/plugins/apexchart/chart-data.js"></script>
+            <!-- Chart JS -->
+            <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+            <script src="assets/plugins/apexchart/chart-data.js"></script>
 
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
+            <!-- Custom JS -->
+            <script src="assets/js/script.js"></script>
 
 </body>
 

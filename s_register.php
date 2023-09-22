@@ -89,22 +89,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </div>
                                 <div class="form-group">
                                     <label>Date of Birth <span class="login-danger">*</span></label>
-
                                     <input required name="dateofbirth" class="form-control" type="date">
 
                                 </div>
-
                                 <div class="form-group">
                                     <label>Address <span class="login-danger">*</span></label>
-
-
                                     <textarea name='address' class="form-control" id="addressTextarea" placeholder="Street: , Area: , City: , Pincode: , State:"></textarea>
                                 </div>
-
-
-
-
-
                                 <div class=" dont-have">Already Registered? <a href="s_login.php">Login</a></div>
                                 <div class="form-group mb-0">
                                     <button class="btn btn-primary btn-block" type="submit" name="accesscheck">Register</button>

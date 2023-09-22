@@ -1,13 +1,5 @@
 <?php
-// session_start();
-// $teacher_id = $_GET['teacherMail'];
-
-if (!isset($_GET['teacherMail'])) {
-	header("Location:index.php");
-	exit();
-} else {
 $teacher_id = $_GET['teacherMail'];
-}
 ?>
 
 <!DOCTYPE html>

@@ -50,7 +50,7 @@ session_start();
 							<!-- Form -->
 							<form method="post" action="teacher_access_check.php">
 								<div class="form-group">
-									<label>Username <span class="login-danger">*</span></label>
+									<label>Email Address <span class="login-danger">*</span></label>
 									<input class="form-control" type="email" name="email" id="email" required>
 									<span class="profile-views"><i class="fas fa-user-circle"></i></span>
 								</div>

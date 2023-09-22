@@ -71,7 +71,7 @@ if (isset($_GET['logout'])) {
                     <img class="rounded-circle" src="assets/img/profiles/avatar-02.jpg" width="31">
                     <div class="user-text">
                         <h6><?php echo $teacherName ?></h6>
-                        <p class="text-muted mb-0"><?php echo $teacher_id ?></p>
+                        <p class="text-muted mb-0">Teacher</p>
                     </div>
                 </span>
             </a>

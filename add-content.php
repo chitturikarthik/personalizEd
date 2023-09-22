@@ -1,5 +1,13 @@
 <?php
 session_start();
+include 'connect.php';
+$teacher_email = $_SESSION["teacher-id"];
+$name = "SELECT teacher_name FROM teacher_details WHERE email = '$teacher_email' ";
+$teacher_result = mysqli_query($conn, $name);
+if ($teacher_result) {
+	$teacher_row = mysqli_fetch_assoc($teacher_result);
+	$teacher_name = $teacher_row['teacher_name'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +81,7 @@ session_start();
 								<div class="bank-inner-details">
 									<form action="upload.php" method="POST" enctype="multipart/form-data">
 										<div class="row">
-											<input name="teacher_id" hidden value="<?php echo $teacher_id ?>">
+											<input name="teacher_id" value="<?php echo $teacher_name ?>">
 											<div class="col-lg-12 col-md-12">
 												<div class="form-group">
 													<label>Content Title<span class="text-danger">*</span></label>

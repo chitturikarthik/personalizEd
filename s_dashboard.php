@@ -1,6 +1,32 @@
 <?php
 session_start();
+$email = $_SESSION["user-id"];
 include 'connect.php';
+
+$email = mysqli_real_escape_string($conn, $email); // Sanitize the input to prevent SQL injection
+
+$student_style_query = "SELECT learning_intelligence FROM student_details WHERE email = '$email'";
+$student_style_result = $conn->query($student_style_query);
+
+if ($student_style_result === false) {
+    die("Query failed: " . $conn->error);
+}
+
+$student_style_row = $student_style_result->fetch_assoc();
+$student_style = $student_style_row['learning_intelligence'];
+
+$selectQuery = "SELECT * FROM contents WHERE learning_intelligence = '$student_style' AND difficulty_level = 0 AND topic_name = 'HTML   ' ";
+$result = $conn->query($selectQuery);
+
+if ($result === false) {
+    die("Query failed: " . $conn->error);
+}
+
+$users = array();
+while ($row = $result->fetch_assoc()) {
+    $users[] = $row;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -82,50 +108,49 @@ include 'connect.php';
 
                             <!-- Personal Details Tab -->
                             <div class="tab-pane fade show active" id="beginner_tab">
-
-                                <!-- Personal Details -->
                                 <div class="row">
-
-
-                                    <div class="col-lg-5">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-10 col-lg-12">
-                                                        <div class="blog grid-blog flex-fill">
-                                                            <div class="blog-image">
-                                                                <a href=""><img class="img-fluid" src="assets/html_begin/1.png" alt="Post Image"></a>
-                                                                <div class="blog-views">
-                                                                    <i class="feather-eye me-1"></i> 225
-                                                                </div>
+                                    <?php
+                                    foreach ($users as $user) :
+                                    ?>
+                                        <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                            <div class="blog grid-blog flex-fill">
+                                                <div class="blog-image">
+                                                    <!-- <a href="blog-details.html"><img class="img-fluid" src="assets/img/category/blog-6.jpg" alt="Post Image"></a> -->
+                                                    <video controls width="100%" height="163">
+                                                        <source src="<?php echo $user['video_path'] ?>">
+                                                    </video>
+                                                    <!-- <div class="blog-views">
+                                                        <i class="feather-eye me-1"></i> 225
+                                                    </div> -->
+                                                </div>
+                                                <div class="blog-content">
+                                                    <ul class="entry-meta meta-item">
+                                                        <li>
+                                                            <div class="post-author">
+                                                                <a href="profile.html">
+                                                                    <img src="assets/img/profiles/avatar-01.jpg" alt="Post Author">
+                                                                    <span>
+                                                                        <span class="post-title">
+                                                                            <?php
+                                                                            echo $user['teacher_name'];
+                                                                            ?>
+                                                                        </span>
+                                                                        <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
+                                                                    </span>
+                                                                </a>
                                                             </div>
-                                                            <div class="blog-content">
-                                                                <ul class="entry-meta meta-item">
-                                                                    <li>
-                                                                        <div class="post-author">
-                                                                            <a href="profile.html">
-                                                                                <img src="img/login-user.jpg" alt="Post Author">
-                                                                                <span>
-                                                                                    <span class="post-title">Vincent</span>
-                                                                                    <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
-                                                                                </span>
-                                                                            </a>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                                <h3 class="blog-title"><a href="blog-details.html">Learning is an objective, Lorem Ipsum is not </a></h3>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="blog-title"><a href="blog-details.html"><?php echo $user['c_title'] ?></a></h3>
+                                                    <p><?php echo $user['c_about'] ?></p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    <?php
+                                    endforeach; ?>
                                 </div>
                             </div>
                             <!-- /Personal Details Tab -->
-
                             <!-- Change Password Tab -->
                             <div id="intermediate_tab" class="tab-pane fade">
 

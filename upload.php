@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $teacher_id = $_POST['teacher_id'];
     $c_title = $_POST["c_title"];
+    $c_topic = $_POST["c_topic"];
     $description = $_POST["description"];
     $c_type = $_POST["c_type"];
     $subject = $_POST["subject"];
@@ -32,8 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (move_uploaded_file($video_tmp_name, $video_path)) {
             // Insert data into the database
-            $sql = "INSERT INTO contents (teacher_id , c_title, c_about, content_type, subject, difficulty_level, learning_intelligence, video_path) 
-                    VALUES ('$teacher_id','$c_title', '$description', '$c_type', '$subject', '$diff_level', '$li_type', '$video_path')";
+            $sql = "INSERT INTO contents (teacher_id , c_title,topic_name, c_about, content_type, subject, difficulty_level, learning_intelligence, video_path) 
+                    VALUES ('$teacher_id','$c_title','$c_topic', '$description', '$c_type', '$subject', '$diff_level', '$li_type', '$video_path')";
             if ($conn->query($sql) === TRUE) {
                 echo " 
                 <script>

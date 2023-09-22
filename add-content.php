@@ -74,8 +74,14 @@ $teacher_id = $_GET['teacherMail'];
 											<input name="teacher_id" hidden value="<?php echo $teacher_id ?>">
 											<div class="col-lg-12 col-md-12">
 												<div class="form-group">
-													<label>Title<span class="text-danger">*</span></label>
+													<label>Content Title<span class="text-danger">*</span></label>
 													<input name="c_title" id="c_title" type="text" class="form-control">
+												</div>
+											</div>
+											<div class="col-lg-12 col-md-12">
+												<div class="form-group">
+													<label>Topic Name<span class="text-danger">*</span></label>
+													<input name="c_topic" id="c_topic" type="text" class="form-control">
 												</div>
 											</div>
 											<div class="col-lg-12 col-md-12">

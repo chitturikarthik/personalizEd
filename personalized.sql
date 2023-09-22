@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2023 at 05:35 PM
+-- Generation Time: Sep 22, 2023 at 05:55 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -33,21 +33,12 @@ CREATE TABLE `contents` (
   `c_title` varchar(50) NOT NULL,
   `c_about` varchar(200) NOT NULL,
   `subject` varchar(10) NOT NULL,
+  `topic_name` varchar(25) NOT NULL,
   `difficulty_level` varchar(10) NOT NULL,
   `learning_intelligence` varchar(10) NOT NULL,
   `content_type` varchar(10) NOT NULL,
   `video_path` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `contents`
---
-
-INSERT INTO `contents` (`content_id`, `teacher_id`, `c_title`, `c_about`, `subject`, `difficulty_level`, `learning_intelligence`, `content_type`, `video_path`) VALUES
-(1, 'karthik_csd@srkrec.e', 'Basic HTML', 'Javascript first programme', 'Web Techno', '1', 'visual', 'video', 'uploads/Javascript - First Program Namaste World _ Lecture 2 _ Web Development Course.mp4'),
-(2, 'karthik_csd@srkrec.e', 'Basic HTML', 'Javascript first programme', 'Web Techno', '1', 'visual', 'video', 'uploads/Javascript - First Program Namaste World _ Lecture 2 _ Web Development Course.mp4'),
-(3, 'karthik_csd@srkrec.e', 'Pointers in C', 'Visualizing pointers in C', 'C', '0', 'logical', 'video', 'uploads/Pointer to Pointer in C_C++ _ Visualizing Pointers in C _ Learn Programming in Animated Way.mp4'),
-(6, 'karthik_csd@srkrec.e', 'CSS | Selectors', 'This video tells about selectors in CSS', 'Web Techno', '0', 'existentia', 'video', 'uploads/CSS - What is selectors_ _ Web Development Course.mp4');
 
 -- --------------------------------------------------------
 
@@ -314,7 +305,7 @@ CREATE TABLE `teacher_details` (
 --
 
 INSERT INTO `teacher_details` (`id`, `teacher_name`, `email`, `date_of_birth`, `mobile`, `address`, `current_role`, `working at`, `img_path`) VALUES
-(20, 'Karthik Chitturi', 'karthik_csd@srkrec.edu.in', '2003-08-22', '9398954816', '22nd ward, Kothapet , Palakol , 534260 , AndhraPra', '', '', '');
+(21, 'Chitturi Karthik', 'karthik_csd@srkrec.edu.in', '2003-08-22', '9398954816', '22nd ward , Kothapet ,Palakol', '', '', '');
 
 --
 -- Indexes for dumped tables
@@ -358,7 +349,7 @@ ALTER TABLE `contents`
 -- AUTO_INCREMENT for table `teacher_details`
 --
 ALTER TABLE `teacher_details`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -2,12 +2,15 @@
 if (isset($_GET['logout'])) {
 	// Clear all session variables
 	$_SESSION = array();
-
 	// Destroy the session
 	session_destroy();
-
 	// Redirect to the login page
 	header("Location: index.php");
+	exit();
+}
+
+if (!isset($_SESSION['access'])) {
+	header("Location:index.php");
 	exit();
 }
 ?>
@@ -51,15 +54,7 @@ if (isset($_GET['logout'])) {
 				</span>
 			</a>
 			<div class="dropdown-menu">
-				<div class="user-header">
-					<div class="avatar avatar-sm">
-						<img src="assets/img/icons/dash-icon-01.svg" alt="User Image" class="avatar-img rounded-circle">
-					</div>
-					<div class="user-text">
-						<h6>Ryan Taylor</h6>
-						<p class="text-muted mb-0">Administrator</p>
-					</div>
-				</div>
+
 				<a class="dropdown-item" href="?logout=1">Logout</a>
 			</div>
 		</li>

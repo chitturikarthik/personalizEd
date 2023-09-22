@@ -12,6 +12,17 @@ if ($result1) {
 	// Handle the query error here
 	echo "Error: " . mysqli_error($conn);
 }
+
+$query_videos = "SELECT COUNT(*) FROM contents"; // Corrected the column name to "username"
+$result2 = mysqli_query($conn, $query_videos);
+
+if ($result2) {
+	$row2 = mysqli_fetch_row($result2);
+	$video_number = $row2[0];
+} else {
+	// Handle the query error here
+	echo "Error: " . mysqli_error($conn);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,8 +111,8 @@ if ($result1) {
 							<div class="card-body">
 								<div class="db-widgets d-flex justify-content-between align-items-center">
 									<div class="db-info">
-										<h6>Awards</h6>
-										<h3>50+</h3>
+										<h6>Content Uploaded</h6>
+										<h3><?php echo $video_number ?></h3>
 									</div>
 									<div class="db-icon">
 										<img src="assets/img/icons/dash-icon-02.svg" alt="Dashboard Icon">

@@ -111,6 +111,7 @@ while ($row = $result->fetch_assoc()) {
                                 <div class="row">
                                     <?php
                                     foreach ($users as $user) :
+                                        echo "You have ";
                                     ?>
                                         <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
                                             <div class="blog grid-blog flex-fill">
@@ -154,15 +155,46 @@ while ($row = $result->fetch_assoc()) {
                             <!-- Change Password Tab -->
                             <div id="intermediate_tab" class="tab-pane fade">
 
-                                <div class="card">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Intermediate</h5> -->
-                                        <div class="row">
-                                            <div class="col-md-10 col-lg-6">
-                                                <h3>INTEMEDIATE CONTENTS WILL BE DISPLAYED HERE</h3>
+                                <div class="row">
+                                    <?php
+                                    foreach ($users as $rowcss) :
+                                    ?>
+                                        <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                            <div class="blog grid-blog flex-fill">
+                                                <div class="blog-image">
+                                                    <!-- <a href="blog-details.html"><img class="img-fluid" src="assets/img/category/blog-6.jpg" alt="Post Image"></a> -->
+                                                    <video controls width="100%" height="163">
+                                                        <source src="<?php echo $rowcss['video_path'] ?>">
+                                                    </video>
+                                                    <!-- <div class="blog-views">
+                                                        <i class="feather-eye me-1"></i> 225
+                                                    </div> -->
+                                                </div>
+                                                <div class="blog-content">
+                                                    <ul class="entry-meta meta-item">
+                                                        <li>
+                                                            <div class="post-author">
+                                                                <a href="profile.html">
+                                                                    <img src="assets/img/profiles/avatar-01.jpg" alt="Post Author">
+                                                                    <span>
+                                                                        <span class="post-title">
+                                                                            <?php
+                                                                            echo $rowcss['teacher_name']
+                                                                            ?>
+                                                                        </span>
+                                                                        <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="blog-title"><a href="blog-details.html"><?php echo $user['c_title'] ?></a></h3>
+                                                    <p><?php echo $user['c_about'] ?></p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    <?php
+                                    endforeach; ?>
                                 </div>
                             </div>
                             <!-- /Change Password Tab -->

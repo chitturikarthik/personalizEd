@@ -132,7 +132,7 @@ while ($row = $result->fetch_assoc()) {
                                                                     <span>
                                                                         <span class="post-title">
                                                                             <?php
-                                                                            echo $user['teacher_name'];
+                                                                            echo $user['teacher_name']
                                                                             ?>
                                                                         </span>
                                                                         <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>

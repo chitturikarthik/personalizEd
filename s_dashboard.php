@@ -3,10 +3,8 @@ session_start();
 $email = $_SESSION["user-id"];
 include 'connect.php';
 
-$email = mysqli_real_escape_string($conn, $email); // Sanitize the input to prevent SQL injection
-
 $student_style_query = "SELECT learning_intelligence FROM student_details WHERE email = '$email'";
-$student_style_result = $conn->query($student_style_query);
+$student_style_result = mysqli_query($conn, $student_style_query);
 
 if ($student_style_result === false) {
     die("Query failed: " . $conn->error);
@@ -15,17 +13,18 @@ if ($student_style_result === false) {
 $student_style_row = $student_style_result->fetch_assoc();
 $student_style = $student_style_row['learning_intelligence'];
 
-$selectQuery = "SELECT * FROM contents WHERE learning_intelligence = '$student_style' AND difficulty_level = 0 AND topic_name = 'HTML   ' ";
-$result = $conn->query($selectQuery);
+
+$selectQuery = "SELECT * FROM contents WHERE learning_intelligence = '$student_style' AND difficulty_level = 0 AND topic_name = 'HTML'";
+$result = mysqli_query($conn, $selectQuery);
 
 if ($result === false) {
     die("Query failed: " . $conn->error);
 }
-
 $users = array();
 while ($row = $result->fetch_assoc()) {
     $users[] = $row;
 }
+
 
 ?>
 
@@ -92,152 +91,183 @@ while ($row = $result->fetch_assoc()) {
 
                         <div class="profile-menu">
                             <ul class="nav nav-tabs nav-tabs-solid">
+
                                 <li class="nav-item">
                                     <a class="nav-link active" data-bs-toggle="tab" href="#beginner_tab">HTML</a>
                                 </li>
+
+
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#intermediate_tab">CSS</a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#advanced_tab">JAVASCRIPT</a>
                                 </li>
                             </ul>
                         </div>
+                        </form>
 
                         <div class="tab-content profile-tab-cont">
 
                             <!-- Personal Details Tab -->
                             <div class="tab-pane fade show active" id="beginner_tab">
+
                                 <div class="row">
-                                    <?php
-                                    foreach ($users as $user) :
-                                        echo "You have ";
-                                    ?>
-                                        <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
-                                            <div class="blog grid-blog flex-fill">
-                                                <div class="blog-image">
-                                                    <!-- <a href="blog-details.html"><img class="img-fluid" src="assets/img/category/blog-6.jpg" alt="Post Image"></a> -->
-                                                    <video controls width="100%" height="163">
-                                                        <source src="<?php echo $user['video_path'] ?>">
-                                                    </video>
-                                                    <!-- <div class="blog-views">
-                                                        <i class="feather-eye me-1"></i> 225
-                                                    </div> -->
-                                                </div>
-                                                <div class="blog-content">
-                                                    <ul class="entry-meta meta-item">
-                                                        <li>
-                                                            <div class="post-author">
-                                                                <a href="profile.html">
-                                                                    <img src="assets/img/profiles/avatar-01.jpg" alt="Post Author">
-                                                                    <span>
-                                                                        <span class="post-title">
-                                                                            <?php
-                                                                            echo $user['teacher_name']
-                                                                            ?>
-                                                                        </span>
-                                                                        <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <h3 class="blog-title"><a href="blog-details.html"><?php echo $user['c_title'] ?></a></h3>
-                                                    <p><?php echo $user['c_about'] ?></p>
+                                    <!-- Blog Post -->
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/l1EssrLxt7E?si=d8XLoHqRJmYRIVh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    <?php
-                                    endforeach; ?>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rek0NWPCNOc?si=9DFb6Dc6jjNe-L7R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- /Blog Post -->
+
                             </div>
-                            <!-- /Personal Details Tab -->
-                            <!-- Change Password Tab -->
+
                             <div id="intermediate_tab" class="tab-pane fade">
 
                                 <div class="row">
-                                    <?php
-                                    foreach ($users as $rowcss) :
-                                    ?>
-                                        <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
-                                            <div class="blog grid-blog flex-fill">
-                                                <div class="blog-image">
-                                                    <!-- <a href="blog-details.html"><img class="img-fluid" src="assets/img/category/blog-6.jpg" alt="Post Image"></a> -->
-                                                    <video controls width="100%" height="163">
-                                                        <source src="<?php echo $rowcss['video_path'] ?>">
-                                                    </video>
-                                                    <!-- <div class="blog-views">
-                                                        <i class="feather-eye me-1"></i> 225
-                                                    </div> -->
-                                                </div>
-                                                <div class="blog-content">
-                                                    <ul class="entry-meta meta-item">
-                                                        <li>
-                                                            <div class="post-author">
-                                                                <a href="profile.html">
-                                                                    <img src="assets/img/profiles/avatar-01.jpg" alt="Post Author">
-                                                                    <span>
-                                                                        <span class="post-title">
-                                                                            <?php
-                                                                            echo $rowcss['teacher_name']
-                                                                            ?>
-                                                                        </span>
-                                                                        <span class="post-date"><i class="far fa-clock"></i> 4 Dec 2022</span>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <h3 class="blog-title"><a href="blog-details.html"><?php echo $user['c_title'] ?></a></h3>
-                                                    <p><?php echo $user['c_about'] ?></p>
+                                    <!-- Blog Post -->
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    <?php
-                                    endforeach; ?>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <!-- /Change Password Tab -->
 
                             <div id="advanced_tab" class="tab-pane fade">
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Advanced</h5> -->
-                                        <div class="row">
-                                            <div class="col-md-10 col-lg-6">
-                                                <h3>ADVANCED CONTENTS WILL BE DISPLAYED HERE</h3>
+                                <div class="row">
+                                    <!-- Blog Post -->
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk?si=__1vw48rlcLaShEv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lkIFF4maKMU?si=HEzUGU99nEu-4ixX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3CUz2748Sw8?si=Z473fVguCMK9iegf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
                 </div>
-
             </div>
+            <!-- /Page Wrapper -->
+
         </div>
-        <!-- /Page Wrapper -->
+        <!-- /Main Wrapper -->
 
-    </div>
-    <!-- /Main Wrapper -->
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap Core JS -->
+        <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap Core JS -->
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Feather Icon JS -->
+        <script src="assets/js/feather.min.js"></script>
 
-    <!-- Feather Icon JS -->
-    <script src="assets/js/feather.min.js"></script>
+        <!-- Slimscroll JS -->
+        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Slimscroll JS -->
-    <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/script.js"></script>
 
 </body>
 

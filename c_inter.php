@@ -68,79 +68,120 @@ include 'connect.php';
 
                         <div class="profile-menu">
                             <ul class="nav nav-tabs nav-tabs-solid">
+
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#beginner_tab">Beginner</a>
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#beginner_tab">PHP</a>
                                 </li>
+
+
                                 <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#intermediate_tab">Intermediate</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#advanced_tab">Advnaced</a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#intermediate_tab">MySQL</a>
                                 </li>
                             </ul>
                         </div>
+                        </form>
 
                         <div class="tab-content profile-tab-cont">
 
                             <!-- Personal Details Tab -->
                             <div class="tab-pane fade show active" id="beginner_tab">
 
-                                <!-- Personal Details -->
                                 <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <!-- <h5 class="card-title">Beginner</h5> -->
-                                                <div class="row">
-                                                    <div class="col-md-10 col-lg-6">
-                                                        <h3>BEGINNER CONTENTS WILL BE DISPLAYED HERE</h3>
+                                    <!-- Blog Post -->
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a7_WFUlFS94?si=NTHwpL1qk-MP0iiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-                                </div>
-                                <!-- /Personal Details -->
 
-                            </div>
-                            <!-- /Personal Details Tab -->
-
-                            <!-- Change Password Tab -->
-                            <div id="intermediate_tab" class="tab-pane fade">
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Intermediate</h5> -->
-                                        <div class="row">
-                                            <div class="col-md-10 col-lg-6">
-                                                <h3>INTEMEDIATE CONTENTS WILL BE DISPLAYED HERE</h3>
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?si=oyX9Y1YH9yfVdkMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7S_tz1z_5bA?si=_4wLh6S9nApxbp9B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /Blog Post -->
+
+                            </div>
+
+                            <div id="intermediate_tab" class="tab-pane fade">
+
+                                <div class="row">
+                                    <!-- Blog Post -->
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-4 col-sm-12 d-flex">
+                                        <div class="blog grid-blog flex-fill">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="ratio ratio-16x9">
+                                                        <iframe src="https://www.youtube.com/embed/6bzTrChjEdc?autohide=0&amp;showinfo=0&amp;controls=0"></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <!-- /Change Password Tab -->
 
-                            <div id="advanced_tab" class="tab-pane fade">
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <!-- <h5 class="card-title">Advanced</h5> -->
-                                        <div class="row">
-                                            <div class="col-md-10 col-lg-6">
-                                                <h3>ADVANCED CONTENTS WILL BE DISPLAYED HERE</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+            <!-- /Page Wrapper -->
+
         </div>
         <!-- /Page Wrapper -->
 

@@ -121,7 +121,7 @@ $jsPieChartData = rtrim($jsPieChartData, ',') . ']';
 	<meta charset="UTF-8" />
 
 	<title>
-		Saana Dashboard
+		PersonalizEd Admin Dashboard
 	</title>
 	<meta name="keywords" content="HTML5 Admin Template" />
 	<meta name="description" content="Porto Admin - Responsive HTML5 Template" />
@@ -183,7 +183,7 @@ $jsPieChartData = rtrim($jsPieChartData, ',') . ']';
 
 				<!-- start: page -->
 
-				<h5 class="text-dark mb-3 mt-3">Alumni Insights</h5>
+				<h5 class="text-dark mb-3 mt-3">Data Insights</h5>
 				<div class="row">
 					<div class="col-lg-6">
 						<section class="card card-featured-left card-featured-quaternary mb-4">
@@ -308,8 +308,8 @@ $jsPieChartData = rtrim($jsPieChartData, ',') . ']';
 									<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
 								</div>
 
-								<h2 class="card-title">Pie Chart</h2>
-								<p class="card-subtitle">Default Pie Chart</p>
+								<h2 class="card-title">Contribution by Teachers</h2>
+								<p class="card-subtitle">Totla content upload from every teacher</p>
 							</header>
 							<div class="card-body">
 
@@ -317,27 +317,27 @@ $jsPieChartData = rtrim($jsPieChartData, ',') . ']';
 								<div class="chart chart-md" id="flotPie"></div>
 								<script type="text/javascript">
 									var flotPieData = [{
-										label: "Visual",
+										label: "B.Tejesh",
 										data: [
-											[1, 60]
+											[1, 20]
 										],
 										color: '#0088cc'
 									}, {
-										label: "L",
+										label: "R.Sahithi Pallavi",
 										data: [
-											[1, 10]
+											[1, 11]
 										],
 										color: '#2baab1'
 									}, {
-										label: "Series 3",
+										label: "V.Pueeth",
 										data: [
-											[1, 15]
+											[1, 5]
 										],
 										color: '#734ba9'
 									}, {
-										label: "Series 4",
+										label: "Chitturi Karthik",
 										data: [
-											[1, 15]
+											[1, 5]
 										],
 										color: '#E36159'
 									}];
